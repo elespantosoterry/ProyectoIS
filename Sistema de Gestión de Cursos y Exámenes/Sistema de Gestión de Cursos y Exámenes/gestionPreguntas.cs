@@ -12,6 +12,9 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 {
     public partial class gestionPreguntas : Form
     {
+        Pregunta_Opcion_Multiple m_q;
+        Pregunta_Completar m_p;
+
         public gestionPreguntas()
         {
             InitializeComponent();
@@ -21,20 +24,46 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void GUARDARbancoPregunta_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void gestionPreguntas_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void UploadCorrecta_Click(object sender, EventArgs e)
+        {
+            m_q.setRespuesta(AlternativaCorrecta.Text);
+        }
+
+        private void UploadIncorrecta_Click(object sender, EventArgs e)
+        {
+            m_q.setRespuestaIncorrecta(AlternativaIncorrecta.Text);
+        }
+
+        private void UploadChoiceCorrecta_Click(object sender, EventArgs e)
+        {
+            m_q.setRespuesta(ChoiceCorrecta.Text);
+        }
+
+        private void UploadChoiceIncorrecta_Click(object sender, EventArgs e)
+        {
+            m_q.setRespuestaIncorrecta(ChoiceIncorrecta.Text);
+        }
+
+        private void PairUpload_Click(object sender, EventArgs e)
+        {
+            m_q.setRespuesta(PairOne.Text);
+            m_q.setRespuestaIncorrecta(PairTwo.Text);
+        }
     }
     public class Pregunta_Opcion_Multiple{
         public string tipo;
         public string pregunta;
-        public string respuesta;
+        public List<string> respuesta;
         public List<string> incorrectas;
         public int tiempo;
         public Curso m_curso;
@@ -44,7 +73,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             return true;
         }
         public bool setRespuesta(string qr) {
-            respuesta = qr;
+            respuesta.Add(qr);
+            return true;
+        }
+        public bool setRespuestaIncorrecta(string qr) {
+            incorrectas.Add(qr);
             return true;
         }
     };

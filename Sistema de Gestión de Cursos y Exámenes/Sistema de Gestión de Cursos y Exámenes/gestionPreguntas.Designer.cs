@@ -30,35 +30,33 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.preguntaPlanteamiento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.DesarrolloCheck = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.ConcretaCheck = new System.Windows.Forms.RadioButton();
+            this.AlternativaCheck = new System.Windows.Forms.RadioButton();
+            this.ChoiceCheck = new System.Windows.Forms.RadioButton();
+            this.PairCheck = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Reglones = new System.Windows.Forms.NumericUpDown();
+            this.AlternativaIncorrecta = new System.Windows.Forms.TextBox();
+            this.UploadCorrecta = new System.Windows.Forms.Button();
+            this.ChoiceIncorrecta = new System.Windows.Forms.TextBox();
+            this.PairOne = new System.Windows.Forms.TextBox();
+            this.PairTwo = new System.Windows.Forms.TextBox();
+            this.PairUpload = new System.Windows.Forms.Button();
+            this.GUARDARbancoPregunta = new System.Windows.Forms.Button();
+            this.ViewBanco = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.ChoiceCorrecta = new System.Windows.Forms.TextBox();
+            this.AlternativaCorrecta = new System.Windows.Forms.TextBox();
+            this.UploadIncorrecta = new System.Windows.Forms.Button();
+            this.UploadChoiceCorrecta = new System.Windows.Forms.Button();
+            this.UploadChoiceIncorrecta = new System.Windows.Forms.Button();
+            this.ConcretaRespuesta = new System.Windows.Forms.TextBox();
+            this.Time = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Reglones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,16 +81,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Coloque el planteamiento de la pregunta";
             // 
-            // textBox1
+            // preguntaPlanteamiento
             // 
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(23, 138);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(475, 78);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Cuerpo de la pregunta";
+            this.preguntaPlanteamiento.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.preguntaPlanteamiento.Location = new System.Drawing.Point(23, 138);
+            this.preguntaPlanteamiento.Margin = new System.Windows.Forms.Padding(4);
+            this.preguntaPlanteamiento.Multiline = true;
+            this.preguntaPlanteamiento.Name = "preguntaPlanteamiento";
+            this.preguntaPlanteamiento.Size = new System.Drawing.Size(475, 78);
+            this.preguntaPlanteamiento.TabIndex = 2;
+            this.preguntaPlanteamiento.Text = "Cuerpo de la pregunta";
             // 
             // label3
             // 
@@ -117,53 +115,53 @@
             this.DesarrolloCheck.Text = "Escrita de Desarrollo";
             this.DesarrolloCheck.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // ConcretaCheck
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(23, 325);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(222, 21);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Escrita de Respuesta Concreta";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.ConcretaCheck.AutoSize = true;
+            this.ConcretaCheck.Location = new System.Drawing.Point(23, 325);
+            this.ConcretaCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.ConcretaCheck.Name = "ConcretaCheck";
+            this.ConcretaCheck.Size = new System.Drawing.Size(222, 21);
+            this.ConcretaCheck.TabIndex = 5;
+            this.ConcretaCheck.TabStop = true;
+            this.ConcretaCheck.Text = "Escrita de Respuesta Concreta";
+            this.ConcretaCheck.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // AlternativaCheck
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(23, 354);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(145, 21);
-            this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Alternativa Multiple";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.AlternativaCheck.AutoSize = true;
+            this.AlternativaCheck.Location = new System.Drawing.Point(23, 354);
+            this.AlternativaCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.AlternativaCheck.Name = "AlternativaCheck";
+            this.AlternativaCheck.Size = new System.Drawing.Size(145, 21);
+            this.AlternativaCheck.TabIndex = 6;
+            this.AlternativaCheck.TabStop = true;
+            this.AlternativaCheck.Text = "Alternativa Multiple";
+            this.AlternativaCheck.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // ChoiceCheck
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(15, 443);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(139, 21);
-            this.radioButton4.TabIndex = 7;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Verdadero / Falso";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.ChoiceCheck.AutoSize = true;
+            this.ChoiceCheck.Location = new System.Drawing.Point(15, 443);
+            this.ChoiceCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.ChoiceCheck.Name = "ChoiceCheck";
+            this.ChoiceCheck.Size = new System.Drawing.Size(139, 21);
+            this.ChoiceCheck.TabIndex = 7;
+            this.ChoiceCheck.TabStop = true;
+            this.ChoiceCheck.Text = "Verdadero / Falso";
+            this.ChoiceCheck.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // PairCheck
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(15, 534);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(128, 21);
-            this.radioButton5.TabIndex = 8;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Emparejamiento";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.PairCheck.AutoSize = true;
+            this.PairCheck.Location = new System.Drawing.Point(15, 534);
+            this.PairCheck.Margin = new System.Windows.Forms.Padding(4);
+            this.PairCheck.Name = "PairCheck";
+            this.PairCheck.Size = new System.Drawing.Size(128, 21);
+            this.PairCheck.TabIndex = 8;
+            this.PairCheck.TabStop = true;
+            this.PairCheck.Text = "Emparejamiento";
+            this.PairCheck.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -176,187 +174,170 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Cantidad de Reglones:";
             // 
-            // numericUpDown1
+            // Reglones
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(385, 296);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(53, 23);
-            this.numericUpDown1.TabIndex = 10;
+            this.Reglones.Location = new System.Drawing.Point(385, 296);
+            this.Reglones.Name = "Reglones";
+            this.Reglones.Size = new System.Drawing.Size(53, 23);
+            this.Reglones.TabIndex = 10;
             // 
-            // textBox2
+            // AlternativaIncorrecta
             // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.Location = new System.Drawing.Point(33, 412);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 23);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.Text = "Escriba aqui la alternativa";
+            this.AlternativaIncorrecta.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.AlternativaIncorrecta.Location = new System.Drawing.Point(33, 412);
+            this.AlternativaIncorrecta.Margin = new System.Windows.Forms.Padding(4);
+            this.AlternativaIncorrecta.Name = "AlternativaIncorrecta";
+            this.AlternativaIncorrecta.Size = new System.Drawing.Size(233, 23);
+            this.AlternativaIncorrecta.TabIndex = 11;
+            this.AlternativaIncorrecta.Text = "Escriba aqui la alternativa";
             // 
-            // button1
+            // UploadCorrecta
             // 
-            this.button1.Location = new System.Drawing.Point(282, 381);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Subir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.UploadCorrecta.Location = new System.Drawing.Point(282, 381);
+            this.UploadCorrecta.Name = "UploadCorrecta";
+            this.UploadCorrecta.Size = new System.Drawing.Size(75, 23);
+            this.UploadCorrecta.TabIndex = 12;
+            this.UploadCorrecta.Text = "Subir";
+            this.UploadCorrecta.UseVisualStyleBackColor = true;
+            this.UploadCorrecta.Click += new System.EventHandler(this.UploadCorrecta_Click);
             // 
-            // textBox3
+            // ChoiceIncorrecta
             // 
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.Location = new System.Drawing.Point(33, 503);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(233, 23);
-            this.textBox3.TabIndex = 13;
-            this.textBox3.Text = "Escriba aqui la alternativa";
+            this.ChoiceIncorrecta.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ChoiceIncorrecta.Location = new System.Drawing.Point(33, 503);
+            this.ChoiceIncorrecta.Margin = new System.Windows.Forms.Padding(4);
+            this.ChoiceIncorrecta.Name = "ChoiceIncorrecta";
+            this.ChoiceIncorrecta.Size = new System.Drawing.Size(233, 23);
+            this.ChoiceIncorrecta.TabIndex = 13;
+            this.ChoiceIncorrecta.Text = "Escriba aqui la alternativa";
             // 
-            // textBox4
+            // PairOne
             // 
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox4.Location = new System.Drawing.Point(33, 563);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(123, 23);
-            this.textBox4.TabIndex = 14;
-            this.textBox4.Text = "Preposicion";
+            this.PairOne.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.PairOne.Location = new System.Drawing.Point(33, 563);
+            this.PairOne.Margin = new System.Windows.Forms.Padding(4);
+            this.PairOne.Name = "PairOne";
+            this.PairOne.Size = new System.Drawing.Size(123, 23);
+            this.PairOne.TabIndex = 14;
+            this.PairOne.Text = "Preposicion";
             // 
-            // textBox5
+            // PairTwo
             // 
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox5.Location = new System.Drawing.Point(176, 563);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(123, 23);
-            this.textBox5.TabIndex = 15;
-            this.textBox5.Text = "Respuesta";
+            this.PairTwo.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.PairTwo.Location = new System.Drawing.Point(176, 563);
+            this.PairTwo.Margin = new System.Windows.Forms.Padding(4);
+            this.PairTwo.Name = "PairTwo";
+            this.PairTwo.Size = new System.Drawing.Size(123, 23);
+            this.PairTwo.TabIndex = 15;
+            this.PairTwo.Text = "Respuesta";
             // 
-            // button2
+            // PairUpload
             // 
-            this.button2.Location = new System.Drawing.Point(334, 563);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = true;
+            this.PairUpload.Location = new System.Drawing.Point(334, 563);
+            this.PairUpload.Name = "PairUpload";
+            this.PairUpload.Size = new System.Drawing.Size(75, 23);
+            this.PairUpload.TabIndex = 16;
+            this.PairUpload.Text = "+";
+            this.PairUpload.UseVisualStyleBackColor = true;
+            this.PairUpload.Click += new System.EventHandler(this.PairUpload_Click);
             // 
-            // label5
+            // GUARDARbancoPregunta
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(653, 92);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 25);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "La pregunta es:";
+            this.GUARDARbancoPregunta.Location = new System.Drawing.Point(647, 138);
+            this.GUARDARbancoPregunta.Name = "GUARDARbancoPregunta";
+            this.GUARDARbancoPregunta.Size = new System.Drawing.Size(125, 96);
+            this.GUARDARbancoPregunta.TabIndex = 19;
+            this.GUARDARbancoPregunta.Text = "Guardar en Banco de Preguntas";
+            this.GUARDARbancoPregunta.UseVisualStyleBackColor = true;
+            this.GUARDARbancoPregunta.Click += new System.EventHandler(this.GUARDARbancoPregunta_Click);
             // 
-            // label6
+            // ViewBanco
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(655, 141);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(177, 17);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Informacion de la pregunta";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(658, 381);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 96);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Guardar en Banco de Preguntas";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(860, 381);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 96);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Ver Banco de Preguntas";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ViewBanco.Location = new System.Drawing.Point(843, 138);
+            this.ViewBanco.Name = "ViewBanco";
+            this.ViewBanco.Size = new System.Drawing.Size(125, 96);
+            this.ViewBanco.TabIndex = 20;
+            this.ViewBanco.Text = "Ver Banco de Preguntas";
+            this.ViewBanco.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(635, 22);
+            this.button5.Location = new System.Drawing.Point(709, 26);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(197, 35);
             this.button5.TabIndex = 21;
             this.button5.Text = "Retroceder";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // ChoiceCorrecta
             // 
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox6.Location = new System.Drawing.Point(33, 472);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(233, 23);
-            this.textBox6.TabIndex = 22;
-            this.textBox6.Text = "Escriba aqui la alternativa verdadera";
+            this.ChoiceCorrecta.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ChoiceCorrecta.Location = new System.Drawing.Point(33, 472);
+            this.ChoiceCorrecta.Margin = new System.Windows.Forms.Padding(4);
+            this.ChoiceCorrecta.Name = "ChoiceCorrecta";
+            this.ChoiceCorrecta.Size = new System.Drawing.Size(233, 23);
+            this.ChoiceCorrecta.TabIndex = 22;
+            this.ChoiceCorrecta.Text = "Escriba aqui la alternativa verdadera";
             // 
-            // textBox7
+            // AlternativaCorrecta
             // 
-            this.textBox7.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox7.Location = new System.Drawing.Point(33, 381);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(233, 23);
-            this.textBox7.TabIndex = 23;
-            this.textBox7.Text = "Escriba aqui la alternativa correcta";
+            this.AlternativaCorrecta.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.AlternativaCorrecta.Location = new System.Drawing.Point(33, 381);
+            this.AlternativaCorrecta.Margin = new System.Windows.Forms.Padding(4);
+            this.AlternativaCorrecta.Name = "AlternativaCorrecta";
+            this.AlternativaCorrecta.Size = new System.Drawing.Size(233, 23);
+            this.AlternativaCorrecta.TabIndex = 23;
+            this.AlternativaCorrecta.Text = "Escriba aqui la alternativa correcta";
             // 
-            // button6
+            // UploadIncorrecta
             // 
-            this.button6.Location = new System.Drawing.Point(282, 412);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 24;
-            this.button6.Text = "Subir";
-            this.button6.UseVisualStyleBackColor = true;
+            this.UploadIncorrecta.Location = new System.Drawing.Point(282, 412);
+            this.UploadIncorrecta.Name = "UploadIncorrecta";
+            this.UploadIncorrecta.Size = new System.Drawing.Size(75, 23);
+            this.UploadIncorrecta.TabIndex = 24;
+            this.UploadIncorrecta.Text = "Subir";
+            this.UploadIncorrecta.UseVisualStyleBackColor = true;
+            this.UploadIncorrecta.Click += new System.EventHandler(this.UploadIncorrecta_Click);
             // 
-            // button7
+            // UploadChoiceCorrecta
             // 
-            this.button7.Location = new System.Drawing.Point(303, 472);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 25;
-            this.button7.Text = "Subir";
-            this.button7.UseVisualStyleBackColor = true;
+            this.UploadChoiceCorrecta.Location = new System.Drawing.Point(303, 472);
+            this.UploadChoiceCorrecta.Name = "UploadChoiceCorrecta";
+            this.UploadChoiceCorrecta.Size = new System.Drawing.Size(75, 23);
+            this.UploadChoiceCorrecta.TabIndex = 25;
+            this.UploadChoiceCorrecta.Text = "Subir";
+            this.UploadChoiceCorrecta.UseVisualStyleBackColor = true;
+            this.UploadChoiceCorrecta.Click += new System.EventHandler(this.UploadChoiceCorrecta_Click);
             // 
-            // button8
+            // UploadChoiceIncorrecta
             // 
-            this.button8.Location = new System.Drawing.Point(303, 503);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 26;
-            this.button8.Text = "Subir";
-            this.button8.UseVisualStyleBackColor = true;
+            this.UploadChoiceIncorrecta.Location = new System.Drawing.Point(303, 503);
+            this.UploadChoiceIncorrecta.Name = "UploadChoiceIncorrecta";
+            this.UploadChoiceIncorrecta.Size = new System.Drawing.Size(75, 23);
+            this.UploadChoiceIncorrecta.TabIndex = 26;
+            this.UploadChoiceIncorrecta.Text = "Subir";
+            this.UploadChoiceIncorrecta.UseVisualStyleBackColor = true;
+            this.UploadChoiceIncorrecta.Click += new System.EventHandler(this.UploadChoiceIncorrecta_Click);
             // 
-            // textBox8
+            // ConcretaRespuesta
             // 
-            this.textBox8.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox8.Location = new System.Drawing.Point(263, 326);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(212, 23);
-            this.textBox8.TabIndex = 27;
-            this.textBox8.Text = "Escriba aqui la respuesta";
+            this.ConcretaRespuesta.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.ConcretaRespuesta.Location = new System.Drawing.Point(263, 326);
+            this.ConcretaRespuesta.Margin = new System.Windows.Forms.Padding(4);
+            this.ConcretaRespuesta.Name = "ConcretaRespuesta";
+            this.ConcretaRespuesta.Size = new System.Drawing.Size(212, 23);
+            this.ConcretaRespuesta.TabIndex = 27;
+            this.ConcretaRespuesta.Text = "Escriba aqui la respuesta";
             // 
-            // textBox9
+            // Time
             // 
-            this.textBox9.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox9.Location = new System.Drawing.Point(120, 622);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(212, 23);
-            this.textBox9.TabIndex = 28;
-            this.textBox9.Text = "Escriba aqui la alternativa";
+            this.Time.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.Time.Location = new System.Drawing.Point(120, 622);
+            this.Time.Margin = new System.Windows.Forms.Padding(4);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(212, 23);
+            this.Time.TabIndex = 28;
+            this.Time.Text = "Escriba aqui la alternativa";
             // 
             // label7
             // 
@@ -375,33 +356,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.Time);
+            this.Controls.Add(this.ConcretaRespuesta);
+            this.Controls.Add(this.UploadChoiceIncorrecta);
+            this.Controls.Add(this.UploadChoiceCorrecta);
+            this.Controls.Add(this.UploadIncorrecta);
+            this.Controls.Add(this.AlternativaCorrecta);
+            this.Controls.Add(this.ChoiceCorrecta);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.ViewBanco);
+            this.Controls.Add(this.GUARDARbancoPregunta);
+            this.Controls.Add(this.PairUpload);
+            this.Controls.Add(this.PairTwo);
+            this.Controls.Add(this.PairOne);
+            this.Controls.Add(this.ChoiceIncorrecta);
+            this.Controls.Add(this.UploadCorrecta);
+            this.Controls.Add(this.AlternativaIncorrecta);
+            this.Controls.Add(this.Reglones);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.PairCheck);
+            this.Controls.Add(this.ChoiceCheck);
+            this.Controls.Add(this.AlternativaCheck);
+            this.Controls.Add(this.ConcretaCheck);
             this.Controls.Add(this.DesarrolloCheck);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.preguntaPlanteamiento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -409,7 +388,7 @@
             this.Name = "gestionPreguntas";
             this.Text = "gestionPreguntas";
             this.Load += new System.EventHandler(this.gestionPreguntas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Reglones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,33 +398,31 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox preguntaPlanteamiento;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton DesarrolloCheck;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton ConcretaCheck;
+        private System.Windows.Forms.RadioButton AlternativaCheck;
+        private System.Windows.Forms.RadioButton ChoiceCheck;
+        private System.Windows.Forms.RadioButton PairCheck;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.NumericUpDown Reglones;
+        private System.Windows.Forms.TextBox AlternativaIncorrecta;
+        private System.Windows.Forms.Button UploadCorrecta;
+        private System.Windows.Forms.TextBox ChoiceIncorrecta;
+        private System.Windows.Forms.TextBox PairOne;
+        private System.Windows.Forms.TextBox PairTwo;
+        private System.Windows.Forms.Button PairUpload;
+        private System.Windows.Forms.Button GUARDARbancoPregunta;
+        private System.Windows.Forms.Button ViewBanco;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox ChoiceCorrecta;
+        private System.Windows.Forms.TextBox AlternativaCorrecta;
+        private System.Windows.Forms.Button UploadIncorrecta;
+        private System.Windows.Forms.Button UploadChoiceCorrecta;
+        private System.Windows.Forms.Button UploadChoiceIncorrecta;
+        private System.Windows.Forms.TextBox ConcretaRespuesta;
+        private System.Windows.Forms.TextBox Time;
         private System.Windows.Forms.Label label7;
     }
 }
