@@ -26,20 +26,38 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         }
     }
-    public class Pregunta_Opciones{
+    public class Pregunta_Opcion_Multiple{
         public string tipo;
         public string pregunta;
-        public List<string> respuestasCorrectas;
-        public List<string> respuestasIncorrectas;
+        public string respuesta;
+        public List<string> incorrectas;
+        public int tiempo;
         public Curso m_curso;
-        public Pregunta_Opciones getPregunta() { return this; }
+        public Pregunta_Opcion_Multiple getPregunta() { return this; }
+        public bool setPregunta(string pr) {
+            pregunta = pr;
+            return true;
+        }
+        public bool setRespuesta(string qr) {
+            respuesta = qr;
+            return true;
+        }
     };
     public class Pregunta_Completar {
         public string tipo;
         public string pregunta;
         public string respuesta;
         public Curso m_curso;
+        public int tiempo;
         public Pregunta_Completar getPregunta() { return this; }
+        public bool setPregunta(string pr) {
+            pregunta = pr;
+            return true;
+        }
+        public bool setRespuesta(string qr) {
+            respuesta = qr;
+            return true;
+        }
     };
 
 }
