@@ -10,7 +10,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
     
     public static class BD
     {
-        public static List<Pregunta_Opcion_Multiple> g_PREGUNTAS_OP_MUL_GLOBAL = new List<Pregunta_Opcion_Multiple>();
+        /*public static List<Pregunta_Opcion_Multiple> g_PREGUNTAS_OP_MUL_GLOBAL = new List<Pregunta_Opcion_Multiple>();
         public static List<Pregunta_Opcion_Multiple> PREGUNTAS_OP_MUL_GLOBAL {
             get { return g_PREGUNTAS_OP_MUL_GLOBAL; }
             set { g_PREGUNTAS_OP_MUL_GLOBAL = value; }
@@ -19,6 +19,12 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         public static List<Pregunta_Completar> PREGUNTAS_CMP_GLOBAL {
             get { return g_PREGUNTAS_CMP_GLOBAL; }
             set { g_PREGUNTAS_CMP_GLOBAL = value; }
+        }*/
+        public static List<Pregunta> g_PREGUNTAS_GLOBAL = new List<Pregunta>();
+        public static List<Pregunta> PREGUNTAS_GLOBAL
+        {
+            get { return g_PREGUNTAS_GLOBAL; }
+            set { g_PREGUNTAS_GLOBAL = value; }
         }
         public static List<Curso> g_CURSO_GLOBAL= new List<Curso>();
         public static List<Curso> CURSO_GLOBAL
