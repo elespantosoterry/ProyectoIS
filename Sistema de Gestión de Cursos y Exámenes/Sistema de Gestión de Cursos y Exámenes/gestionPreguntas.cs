@@ -25,6 +25,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
 
         }
+
+        private void gestionPreguntas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     public class Pregunta_Opcion_Multiple{
         public string tipo;
