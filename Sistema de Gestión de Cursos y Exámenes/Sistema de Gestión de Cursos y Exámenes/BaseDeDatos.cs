@@ -10,6 +10,16 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
     
     public static class BD
     {
+        public static List<Pregunta_Opciones> g_PREGUNTASOP_GLOBAL = new List<Pregunta_Opciones>();
+        public static List<Pregunta_Opciones> PREGUNTASOP_GLOBAL {
+            get { return g_PREGUNTASOP_GLOBAL; }
+            set { g_PREGUNTASOP_GLOBAL = value; }
+        }
+        public static List<Pregunta_Completar> g_PREGUNTASCMP_GLOBAL = new List<Pregunta_Completar>();
+        public static List<Pregunta_Completar> PREGUNTASCMP_GLOBAL {
+            get { return g_PREGUNTASCMP_GLOBAL; }
+            set { g_PREGUNTASCMP_GLOBAL = value; }
+        }
         public static List<Curso> g_CURSO_GLOBAL= new List<Curso>();
         public static List<Curso> CURSO_GLOBAL
         {
