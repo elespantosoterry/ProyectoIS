@@ -26,12 +26,26 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void GUARDARbancoPregunta_Click(object sender, EventArgs e)
         {
+            if (DesarrolloCheck.Checked == true) {
+                   
+            }
+            if (ConcretaCheck.Checked == true) {
+
+            }
+            if (AlternativaCheck.Checked == true) { 
             
+            }
+            if (ChoiceCheck.Checked == true) { 
+            
+            }
+            if (PairCheck.Checked == true) { 
+            
+            }
         }
 
         private void gestionPreguntas_Load(object sender, EventArgs e)
         {
-
+            unidadesComboBox.Items.Add(BD.g_PROFESOR_GLOBAL);
         }
 
         private void UploadCorrecta_Click(object sender, EventArgs e)
@@ -60,12 +74,37 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             m_q.setRespuestaIncorrecta(PairTwo.Text);
         }
     }
+
+    public class Pregunta {
+        public string tipo;
+        public string pregunta;
+        public string respuestaCMP;
+        public List<string> respuestasOP;
+        public List<string> incorrectasOP;
+        public int tiempo;
+        public Unidad_Tematica m_unidad;
+        public Curso m_curso;
+        public Pregunta getPregunta() { return this; }
+        public bool setPregunta(string pr) {
+            pregunta = pr;
+            return true;
+        }
+        public bool setRespuestaOP(string pr) {
+            respuestasOP.Add(pr);
+            return true;
+        }
+        public bool setRespuestaCMP(string qr) {
+            respuestaCMP = qr;
+            return true;
+        }
+    };
     public class Pregunta_Opcion_Multiple{
         public string tipo;
         public string pregunta;
         public List<string> respuesta;
         public List<string> incorrectas;
         public int tiempo;
+        public Unidad_Tematica m_unidad;
         public Curso m_curso;
         public Pregunta_Opcion_Multiple getPregunta() { return this; }
         public bool setPregunta(string pr) {
@@ -85,6 +124,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         public string tipo;
         public string pregunta;
         public string respuesta;
+        public Unidad_Tematica m_unidad;
         public Curso m_curso;
         public int tiempo;
         public Pregunta_Completar getPregunta() { return this; }

@@ -215,7 +215,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
     public class Curso
     {
         public string nombre;
-        public List<unidad_tematica> unidadesTematicas;
+        public List<Unidad_Tematica> unidadesTematicas;
 
 
         public Curso(string nom)
@@ -248,10 +248,6 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         public Curso curso;
         public Periodo_Academico periodo;
         public string identificador;
-
-    }
-    public class unidad_tematica
-    {
 
     }
 }

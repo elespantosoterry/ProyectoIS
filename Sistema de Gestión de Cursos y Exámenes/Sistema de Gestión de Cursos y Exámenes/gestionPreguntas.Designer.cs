@@ -56,6 +56,10 @@
             this.ConcretaRespuesta = new System.Windows.Forms.TextBox();
             this.Time = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.CursosComboBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.unidadesComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Reglones)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,7 +247,7 @@
             // 
             // GUARDARbancoPregunta
             // 
-            this.GUARDARbancoPregunta.Location = new System.Drawing.Point(647, 138);
+            this.GUARDARbancoPregunta.Location = new System.Drawing.Point(666, 237);
             this.GUARDARbancoPregunta.Name = "GUARDARbancoPregunta";
             this.GUARDARbancoPregunta.Size = new System.Drawing.Size(125, 96);
             this.GUARDARbancoPregunta.TabIndex = 19;
@@ -253,7 +257,7 @@
             // 
             // ViewBanco
             // 
-            this.ViewBanco.Location = new System.Drawing.Point(843, 138);
+            this.ViewBanco.Location = new System.Drawing.Point(853, 237);
             this.ViewBanco.Name = "ViewBanco";
             this.ViewBanco.Size = new System.Drawing.Size(125, 96);
             this.ViewBanco.TabIndex = 20;
@@ -337,7 +341,7 @@
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(212, 23);
             this.Time.TabIndex = 28;
-            this.Time.Text = "Escriba aqui la alternativa";
+            this.Time.Text = "Escriba aqui el tiempo";
             // 
             // label7
             // 
@@ -350,11 +354,53 @@
             this.label7.TabIndex = 29;
             this.label7.Text = "Tiempo:";
             // 
+            // CursosComboBox
+            // 
+            this.CursosComboBox.FormattingEnabled = true;
+            this.CursosComboBox.Location = new System.Drawing.Point(882, 96);
+            this.CursosComboBox.Name = "CursosComboBox";
+            this.CursosComboBox.Size = new System.Drawing.Size(121, 24);
+            this.CursosComboBox.TabIndex = 30;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(643, 95);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(172, 22);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Seleccione un curso";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(643, 138);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(229, 22);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Seleccione unidad tematica";
+            // 
+            // unidadesComboBox
+            // 
+            this.unidadesComboBox.FormattingEnabled = true;
+            this.unidadesComboBox.Location = new System.Drawing.Point(882, 138);
+            this.unidadesComboBox.Name = "unidadesComboBox";
+            this.unidadesComboBox.Size = new System.Drawing.Size(121, 24);
+            this.unidadesComboBox.TabIndex = 33;
+            // 
             // gestionPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.unidadesComboBox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.CursosComboBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.ConcretaRespuesta);
@@ -424,5 +470,9 @@
         private System.Windows.Forms.TextBox ConcretaRespuesta;
         private System.Windows.Forms.TextBox Time;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox CursosComboBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox unidadesComboBox;
     }
 }

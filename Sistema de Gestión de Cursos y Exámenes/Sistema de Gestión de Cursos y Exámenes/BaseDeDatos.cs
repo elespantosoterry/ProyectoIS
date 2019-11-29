@@ -34,7 +34,8 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             set { g_PROFESOR_GLOBAL = value; }
         }
 
-
+        public static int g_sesionID;
+        public static int g_sesionTipo;
         public static List<Periodo_Academico> g_PERIODO_ACADEMICO_GLOBAL= new List<Periodo_Academico>();
 
         public static List<Periodo_Academico> PERIODO_ACADEMICO_GLOBAL

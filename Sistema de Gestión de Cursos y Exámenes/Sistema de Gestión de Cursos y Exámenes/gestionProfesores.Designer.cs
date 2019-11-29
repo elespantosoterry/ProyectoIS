@@ -328,6 +328,7 @@
             this.Controls.Add(this.titulo);
             this.Name = "gestionProfesores";
             this.Text = "gestionProfesore";
+            this.Load += new System.EventHandler(this.gestionProfesores_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablaProfesores)).EndInit();

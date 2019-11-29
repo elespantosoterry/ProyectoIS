@@ -220,6 +220,9 @@
     <EmbeddedResource Include="gestionProfesores.resx">
       <DependentUpon>gestionProfesores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gestionUnidadesTematicas.resx">
+      <DependentUpon>gestionUnidadesTematicas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>

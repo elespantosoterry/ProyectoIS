@@ -171,6 +171,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             back.ShowDialog();
             this.Close();
         }
+
+        private void gestionProfesores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class Profesor
