@@ -208,6 +208,9 @@
     <EmbeddedResource Include="examenesDisponibles.resx">
       <DependentUpon>examenesDisponibles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="generacionExamenes.resx">
+      <DependentUpon>generacionExamenes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gestionCursos.resx">
       <DependentUpon>gestionCursos.cs</DependentUpon>
     </EmbeddedResource>
