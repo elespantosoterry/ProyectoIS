@@ -211,6 +211,9 @@
     <Compile Include="visualizarExamen.Designer.cs">
       <DependentUpon>visualizarExamen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bancoPreguntas.resx">
+      <DependentUpon>bancoPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="examenesDisponibles.resx">
       <DependentUpon>examenesDisponibles.cs</DependentUpon>
     </EmbeddedResource>

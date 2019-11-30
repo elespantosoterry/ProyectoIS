@@ -98,6 +98,7 @@
             this.calendarPeriodo.MaxSelectionCount = 365;
             this.calendarPeriodo.Name = "calendarPeriodo";
             this.calendarPeriodo.TabIndex = 20;
+            this.calendarPeriodo.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calendarPeriodo_DateChanged);
             // 
             // label1
             // 
@@ -216,6 +217,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "gestionPeriodos";
             this.Text = "gestionPeriodos";
+            this.Load += new System.EventHandler(this.gestionPeriodos_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

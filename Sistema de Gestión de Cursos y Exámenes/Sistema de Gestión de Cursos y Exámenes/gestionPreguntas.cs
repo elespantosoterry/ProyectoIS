@@ -109,6 +109,13 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             menuAlumno a = new menuAlumno();
             a.Show();
         }
+
+        private void ViewBanco_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            bancoPreguntas a = new bancoPreguntas();
+            a.Show();
+        }
     }
 
     public class Pregunta {
@@ -145,6 +152,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             return true;
         }
         public Pregunta(int p = 0) {
+            reglones = 0;
             if (p == 1) {
                 tipo = "llenar";
                 pregunta = "Esta bien esto? DESARROLLO LARGO";

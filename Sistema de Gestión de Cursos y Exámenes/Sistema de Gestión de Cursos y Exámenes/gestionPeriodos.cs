@@ -52,15 +52,15 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
 
 
-            Periodo_Academico foo = new Periodo_Academico(nombre,calendarPeriodo.SelectionStart,calendarPeriodo.SelectionEnd);
+            Periodo_Academico foo = new Periodo_Academico(nombre, calendarPeriodo.SelectionStart, calendarPeriodo.SelectionEnd);
             //string nuevo = foo.m_periodo;
             BD.PERIODO_ACADEMICO_GLOBAL.Add(foo);
             this.nuevoPeriodo.Text = string.Empty; //borra lo escrito
             MessageBox.Show("Abierto exitosamente");
             refreshPeriodos();
-            
+
         }
-        
+
         private void periodoEliminado_Loaded(object sender, EventArgs e)
         {
             for (int i = 0; i < BD.PERIODO_ACADEMICO_GLOBAL.Count; i++)
@@ -74,9 +74,9 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void periodoEliminado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            
-            
+
+
+
 
         }
 
@@ -93,15 +93,25 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             back.ShowDialog();
             this.Close();
         }
+        private void calendarPeriodo_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+            
+        }
+        private void gestionPeriodos_Load(object sender, EventArgs e)
+        {
+            refreshPeriodos();
+        }
+        
     }
     public class Periodo_Academico
     {
         public string m_periodo;
         public DateTime inicio;
         public DateTime fin;
-        public Periodo_Academico(string nombre,DateTime ini,DateTime fn)
+        public Periodo_Academico(string nombre, DateTime ini, DateTime fn)
         {
-            m_periodo=nombre;
+            m_periodo = nombre;
             inicio = ini;
             fin = fn;
         }

@@ -77,7 +77,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                 return;
             }
 
-            bool encontro = false;
+            bool encontro = false,enGrupo=false;
             for (int i = 0; i < BD.ALUMNO_GLOBAL.Count; i++)
             {
                 if (BD.ALUMNO_GLOBAL[i].codigo == codigoMatricula.Text)
@@ -88,21 +88,32 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                     //Grupo foo = (Grupo)(BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex]).Clone();
                     Grupo foo = new Grupo();
                     foo = BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex];
-                    if (foo == null)
-                        MessageBox.Show("KHEEE");
-                    BD.ALUMNO_GLOBAL[i].grupos.Add(foo);
                     
+                    for(int j=0;j< BD.ALUMNO_GLOBAL[i].grupos.Count; j++)
+                    {
+                        if(foo==BD.ALUMNO_GLOBAL[i].grupos[j])
+                        {
+                            enGrupo = true;
+                        }
+                    }
+                    if (enGrupo ==true )
+                    {
+                        MessageBox.Show("Ya estaba registrado en ese grupo");
+                        break;
+                    }
+                    BD.ALUMNO_GLOBAL[i].grupos.Add(foo);
                     BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex].cupos -= 1;
                     break;
                 } 
             }
-            if (encontro == true)
+            if (encontro == true && enGrupo==false)
             {
                 MessageBox.Show("Creado exitosamente");
             }
             else
             {
-                MessageBox.Show("No se encontró ese Código de Alumno");
+                if (encontro == false)
+                    MessageBox.Show("No se encontró ese Código de Alumno");
             }
 
             matriculaGrupos.Text = string.Empty;
@@ -168,6 +179,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             
             
 
+        }
+
+        private void gestionAlumnos_Load(object sender, EventArgs e)
+        {
+            refreshItems();
         }
     }
     public class Alumno
