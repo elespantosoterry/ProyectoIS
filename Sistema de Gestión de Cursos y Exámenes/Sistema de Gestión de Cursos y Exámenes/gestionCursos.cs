@@ -107,6 +107,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                 cursoEliminado.Items.Add(nuevo);
             }
             profesorAsignado.Items.Clear();
+            
             for (int i = 0; i < BD.PROFESOR_GLOBAL.Count; i++)
             {
                 string nuevo = BD.PROFESOR_GLOBAL[i].nombre;
@@ -213,7 +214,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void cursoAsignado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            refreshItemsEliminado();
+            //refreshItemsEliminado();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

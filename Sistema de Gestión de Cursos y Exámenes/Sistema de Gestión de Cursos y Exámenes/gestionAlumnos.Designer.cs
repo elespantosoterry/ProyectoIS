@@ -30,7 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.codigoRetiro = new System.Windows.Forms.TextBox();
             this.eliminarCursoBT = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.retiroGrupos = new System.Windows.Forms.ComboBox();
@@ -78,7 +78,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.textBox7);
+            this.panel3.Controls.Add(this.codigoRetiro);
             this.panel3.Controls.Add(this.eliminarCursoBT);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.retiroGrupos);
@@ -89,13 +89,14 @@
             this.panel3.Size = new System.Drawing.Size(376, 584);
             this.panel3.TabIndex = 16;
             // 
-            // textBox7
+            // codigoRetiro
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.textBox7.Location = new System.Drawing.Point(21, 103);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(329, 30);
-            this.textBox7.TabIndex = 23;
+            this.codigoRetiro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.codigoRetiro.Location = new System.Drawing.Point(21, 103);
+            this.codigoRetiro.Name = "codigoRetiro";
+            this.codigoRetiro.Size = new System.Drawing.Size(329, 30);
+            this.codigoRetiro.TabIndex = 23;
+            this.codigoRetiro.TextChanged += new System.EventHandler(this.codigoRetiro_TextChanged);
             // 
             // eliminarCursoBT
             // 
@@ -106,6 +107,7 @@
             this.eliminarCursoBT.TabIndex = 18;
             this.eliminarCursoBT.Text = "Guardar";
             this.eliminarCursoBT.UseVisualStyleBackColor = true;
+            this.eliminarCursoBT.Click += new System.EventHandler(this.eliminarCursoBT_Click);
             // 
             // label13
             // 
@@ -464,7 +466,7 @@
         private System.Windows.Forms.TextBox cuposMatricula;
         private System.Windows.Forms.TextBox nuevoCodigo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox codigoRetiro;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox retiroGrupos;
         private System.Windows.Forms.Label label14;

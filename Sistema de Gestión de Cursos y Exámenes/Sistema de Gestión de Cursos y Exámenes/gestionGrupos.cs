@@ -61,7 +61,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         }
     }
 
-    public class Grupo
+    public class Grupo:ICloneable
     {
         public Profesor encargado;
         public Curso curso;
@@ -76,7 +76,15 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             identificador = id;
             cupos = c;
         }
-
+        public Grupo()
+        {
+            
+        }
+        public object Clone()
+        {
+            Grupo nuevo = (Grupo)this.MemberwiseClone();
+            return nuevo;
+        }
         void ejecutarExamen(Examen exa)
         {
 
