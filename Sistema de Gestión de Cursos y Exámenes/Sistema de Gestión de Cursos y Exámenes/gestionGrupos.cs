@@ -59,6 +59,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             back.ShowDialog();
             this.Close();
         }
+
+        private void gestionGrupos_Load(object sender, EventArgs e)
+        {
+            refreshGrupos();
+        }
     }
 
     public class Grupo:ICloneable

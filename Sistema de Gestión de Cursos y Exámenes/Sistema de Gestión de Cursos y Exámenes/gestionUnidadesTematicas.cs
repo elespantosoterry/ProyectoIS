@@ -19,7 +19,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void gestionUnidadesTematicas_Load(object sender, EventArgs e)
         {
-
+            refreshItems();
         }
 
         private void label11_Click(object sender, EventArgs e)

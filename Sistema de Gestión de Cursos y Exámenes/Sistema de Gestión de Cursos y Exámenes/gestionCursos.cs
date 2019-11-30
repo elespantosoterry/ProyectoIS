@@ -224,6 +224,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             back.ShowDialog();
             this.Close();
         }
+
+        private void gestionCursos_Load(object sender, EventArgs e)
+        {
+            refreshItemsEliminado();
+        }
     }
     public class Curso
     {

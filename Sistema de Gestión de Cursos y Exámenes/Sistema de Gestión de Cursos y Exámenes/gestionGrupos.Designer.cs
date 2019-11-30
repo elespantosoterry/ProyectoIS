@@ -240,6 +240,7 @@
             this.Controls.Add(this.titulo);
             this.Name = "gestionGrupos";
             this.Text = "gestionGrupos";
+            this.Load += new System.EventHandler(this.gestionGrupos_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
