@@ -34,3 +34,25 @@ C:\Users\Asus\Desktop\Proyecto\Sistema de Gestión de Cursos y Exámenes\Sistema
 C:\Users\Asus\Desktop\Proyecto\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.GenerateResource.cache
 C:\Users\Asus\Desktop\Proyecto\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.exe
 C:\Users\Asus\Desktop\Proyecto\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.pdb
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.exe.config
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.exe
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.pdb
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.examenesDisponibles.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.generacionExamenes.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionAlumnos.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionCursos.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionGrupos.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionPeriodos.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionPreguntas.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionProfesores.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionUnidadesTematicas.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.login.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuAlumno.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuDirector.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuProfesor.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.Properties.Resources.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.rendirExamen.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.GenerateResource.cache
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.exe
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.pdb

@@ -19,9 +19,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void login_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("Profesor");
-            comboBox1.Items.Add("Director");
-            comboBox1.Items.Add("Alumno");
+
 
         }
 
@@ -32,43 +30,57 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void button1_Click(object sender, EventArgs e)
         {
+            List<Alumno> Alumnos = new List<Alumno>();
+            Alumnos = BD.ALUMNO_GLOBAL;
+            Alumno al = new Alumno();
+            al.usuario = "alumno";
+            al.contraseña = "alumno";
+            Alumnos.Add(al);
+
             List<Profesor> Profesores = new List<Profesor>();
             Profesores = BD.g_PROFESOR_GLOBAL;
+            Profesor prof = new Profesor();
+            prof.usuario = "profesor";
+            prof.contraseña = "profesor";
+            Profesores.Add(prof);
 
             List<string> Directores = new List<string>();
-            Directores.Add("YvanTupac");
+            Directores.Add("director");
             Directores.Add("Erick");
             Directores.Add("AlexC");
 
-            string tipo = comboBox1.Text;
             bool check = false;
 
-            if (tipo == "Director")
+            if (check == false)
             {
-                for(int i=0; i<Directores.Count; i++)
+                for (int i = 0; i < Directores.Count; i++)
                 {
-                    if(textBox1.Text==Directores[i] && textBox2.Text == Directores[i])
+                    if (textBox1.Text == Directores[i] && textBox2.Text == Directores[i])
                     {
                         check = true;
                         this.Hide();
                         menuDirector mD = new menuDirector();
                         mD.Show();
+                        BD.g_sesionID = i;
+                        BD.g_sesionTipo = 1;
 
                     }
                 }
-
-                if (check == false)
-                {
-                    MessageBox.Show("Error de autenticacion, verifique usuario y/O contraseña ó es posible que su cuenta este inhabilitada", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-
-
             }
 
-            else if (tipo == "Profesor")
+           if (check == false)
             {
-                for (int i = 0; i < Profesores.Count; i++)
+                if (textBox1.Text == "profesor" && textBox2.Text == "profesor")
+                {
+                    check = true;
+                    this.Hide();
+                    menuProfesor mP = new menuProfesor();
+                    mP.Show();
+                    BD.g_sesionID = 0;
+                    BD.g_sesionTipo = 2;
+                }
+
+                for (int i = 0; i < Profesores.Count && check==false; i++)
                 {
                     if (textBox1.Text == Profesores[i].usuario && textBox2.Text == Profesores[i].contraseña)
                     {
@@ -76,17 +88,44 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                         this.Hide();
                         menuProfesor mP = new menuProfesor();
                         mP.Show();
+                        BD.g_sesionID = i;
+                        BD.g_sesionTipo = 2;
+                    }
+                }
+            }
+
+            if(check==false)
+            {
+                if (textBox1.Text == "alumno" && textBox2.Text == "alumno")
+                {
+                    check = true;
+                    this.Hide();
+                    menuAlumno mA = new menuAlumno();
+                    mA.Show();
+                    BD.g_sesionID = 0;
+                    BD.g_sesionTipo = 3;
+
+                }
+                for (int i = 0; i < Alumnos.Count && check == false; i++)
+                {
+                    if (textBox1.Text == Alumnos[i].usuario && textBox2.Text == Alumnos[i].contraseña)
+                    {
+                        check = true;
+                        this.Hide();
+                        menuAlumno mA = new menuAlumno();
+                        mA.Show();
+                        BD.g_sesionID = i;
+                        BD.g_sesionTipo = 3;
 
                     }
 
                 }
-                if (check == false)
-                {
-                    MessageBox.Show("Error de autenticacion, verifique usuario y/O contraseña ó es posible que su cuenta este inhabilitada", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
             }
 
+            if (check == false)
+            {
+                MessageBox.Show("Error de autenticacion, verifique usuario y/O contraseña ó es posible que su cuenta este inhabilitada", "Mensaje del sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
@@ -100,9 +139,5 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
