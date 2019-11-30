@@ -41,7 +41,6 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void menuAlumno_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

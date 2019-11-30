@@ -30,12 +30,13 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void button1_Click(object sender, EventArgs e)
         {
+         
             List<Alumno> Alumnos = new List<Alumno>();
             Alumnos = BD.ALUMNO_GLOBAL;
-            Alumno al = new Alumno();
-            al.usuario = "alumno";
-            al.contraseña = "alumno";
-            Alumnos.Add(al);
+            //Alumno al = new Alumno();
+            //al.usuario = "alumno";
+            //al.contraseña = "alumno";
+            //Alumnos.Add(al);
 
             List<Profesor> Profesores = new List<Profesor>();
             Profesores = BD.g_PROFESOR_GLOBAL;

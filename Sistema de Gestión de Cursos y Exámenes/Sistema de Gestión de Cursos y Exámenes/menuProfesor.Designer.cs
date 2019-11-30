@@ -115,6 +115,7 @@
             this.Controls.Add(this.button1);
             this.Name = "menuProfesor";
             this.Text = "menuProfesor";
+            this.Load += new System.EventHandler(this.menuProfesor_Load);
             this.ResumeLayout(false);
 
         }

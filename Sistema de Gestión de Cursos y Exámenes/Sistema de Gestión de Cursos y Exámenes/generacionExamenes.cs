@@ -24,6 +24,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         public List<Grupo> Grupos;
         public List<int> Puntajes; //el vector de las preguntas deben conincidir en cuanto a indices a el de puntajes
         public Curso curso;
+        public int puntaje_final;
 
         int SumatoriasPuntaje()
         {

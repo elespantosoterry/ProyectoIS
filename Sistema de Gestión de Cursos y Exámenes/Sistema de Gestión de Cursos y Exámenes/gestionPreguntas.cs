@@ -28,9 +28,9 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             for (int i = 0; i < BD.g_PROFESOR_GLOBAL[BD.g_sesionID].cursos.Count(); i++)
             {
                 CursosComboBox.Items.Add(BD.g_PROFESOR_GLOBAL[BD.g_sesionID].cursos[i]);
-                for (int j = 0; j < BD.g_PROFESOR_GLOBAL[BD.g_sesionID].cursos[i].unidadesTematicas.Count(); j++)
+                for (int j = 0; j < BD.PROFESOR_GLOBAL[BD.g_sesionID].cursos[i].unidadesTematicas.Count(); j++)
                 {
-                    unidadesComboBox.Items.Add(BD.g_PROFESOR_GLOBAL[BD.g_sesionID].cursos[i].unidadesTematicas[j]);
+                    unidadesComboBox.Items.Add(BD.PROFESOR_GLOBAL[BD.g_sesionID].cursos[i].unidadesTematicas[j]);
                 }
             }
         }

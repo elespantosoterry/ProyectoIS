@@ -58,5 +58,9 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             gestionPreguntas gP = new gestionPreguntas();
             gP.Show();
         }
+
+        private void menuProfesor_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

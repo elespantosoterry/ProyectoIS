@@ -35,37 +35,43 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             {
 
                 int index = e.RowIndex;
+                BD.g_exam = index;
                 this.Hide();
-                examenVirtuak eV = new examenVirtuak();
-                eV.Show();
+                rendirExamen rE = new rendirExamen();
+                rE.Show();
             }
         }
 
         private void examenesDisponibles_Load(object sender, EventArgs e)
         {
             Alumno al =  BD.ALUMNO_GLOBAL[BD.g_sesionID];
-            Examen exa = new Examen();
-            exa.Tipo = "Final";
-            Curso c = new Curso("Mate");
-            exa.curso = c;
-            exa.Npreguntas = 1;
-            List<int> preguntas = new List<int>();
-            Pregunta p1 = new Pregunta();
-            p1.pregunta = "Hola?";
-            preguntas.Add(0);
-            BD.PREGUNTAS_GLOBAL.Add(p1);
-            exa.Preguntas = preguntas;
+
+            //Examen exa = new Examen();
+            //exa.Tipo = "Final";
+            //Curso c = new Curso("Mate");
+            //exa.curso = c;
+            //exa.Npreguntas = 1;
+            //List<int> preguntas = new List<int>();
+            //Pregunta p1 = new Pregunta();
+            //p1.pregunta = "Hola?";
+            //preguntas.Add(0);
+            //BD.PREGUNTAS_GLOBAL.Add(p1);
+            //exa.Preguntas = preguntas;
+
+
             List<Examen> exam = new List<Examen>();
-            
-            al.examenes = exam;
-            Grupo g = new Grupo("grupo1", 1);
-            List<Grupo> grupos = new List<Grupo>();
-            grupos.Add(g);
-            exa.Grupos = grupos;
-            exam.Add(exa);
+
+            //al.examenes = exam;
+            //Grupo g = new Grupo("grupo1", 1);
+            //List<Grupo> grupos = new List<Grupo>();
+            //grupos.Add(g);
+            //exa.Grupos = grupos;
+            //exam.Add(exa);
             //al.examenes.Add(exa);
             //al.examenes.Add(exa);
 
+            exam = al.examenes;
+           
 
             for (int i = 0; i < exam.Count; i++)
             {

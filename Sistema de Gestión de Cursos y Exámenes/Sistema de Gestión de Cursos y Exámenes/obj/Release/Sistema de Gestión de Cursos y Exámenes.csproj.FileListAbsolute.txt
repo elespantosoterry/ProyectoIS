@@ -84,11 +84,9 @@ C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y E
 C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.xml
 C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.CopyComplete
 >>>>>>> fadcbd86c97628c8ecb0f6d23c54e7b77a1f7e4f
-<<<<<<< HEAD
 C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.dll
 C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.xml
 C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.CopyComplete
-=======
 D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.exe.config
 D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.exe
 D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.pdb

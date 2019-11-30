@@ -20,10 +20,14 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             get { return g_PREGUNTAS_CMP_GLOBAL; }
             set { g_PREGUNTAS_CMP_GLOBAL = value; }
         }*/
-        public static Pregunta unaPLLENAR = new Pregunta(1);
-        public static Pregunta unaPCONCRETA = new Pregunta(2);
-        public static Pregunta unaPALTERNATIVA = new Pregunta(3);
-        public static Pregunta unaPVERDADEROFALSO = new Pregunta(4);
+
+
+        //public static Pregunta unaPLLENAR = new Pregunta(1);
+        //public static Pregunta unaPCONCRETA = new Pregunta(2);
+        //public static Pregunta unaPALTERNATIVA = new Pregunta(3);
+        //public static Pregunta unaPVERDADEROFALSO = new Pregunta(4);
+
+
         public static List<Pregunta> g_PREGUNTAS_GLOBAL = new List<Pregunta>();
         public static List<Pregunta> PREGUNTAS_GLOBAL
         {
@@ -43,15 +47,20 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             get { return g_PROFESOR_GLOBAL; }
             set { g_PROFESOR_GLOBAL = value; }
         }
+
         public static List<Alumno> g_ALUMNO_GLOBAL = new List<Alumno>();
+        
         public static List<Alumno> ALUMNO_GLOBAL
         {
             get { return g_ALUMNO_GLOBAL; }
             set { g_ALUMNO_GLOBAL = value; }
         }
 
+        public static int puntaje_ex = new int();
+        public static int g_exam = new int();
         public static int g_sesionID;
         public static int g_sesionTipo;
+
         public static List<Periodo_Academico> g_PERIODO_ACADEMICO_GLOBAL= new List<Periodo_Academico>();
 
         public static List<Periodo_Academico> PERIODO_ACADEMICO_GLOBAL
