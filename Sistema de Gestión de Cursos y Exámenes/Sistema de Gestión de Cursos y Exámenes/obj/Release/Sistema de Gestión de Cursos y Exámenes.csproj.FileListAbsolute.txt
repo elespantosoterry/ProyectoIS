@@ -84,3 +84,6 @@ C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y E
 C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.xml
 C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.CopyComplete
 >>>>>>> fadcbd86c97628c8ecb0f6d23c54e7b77a1f7e4f
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.dll
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.xml
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.CopyComplete

@@ -15,13 +15,15 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 {
     public struct Examen
     {
-        List<int> Preguntas; //Indices de pregunta
-        string Nombre; //Nombres y apellidos del alumno
-        string Tipo; //Control parcial final
-        int Tiempo;  //Tiempo del examen debe coincidir con la sumatoria de tiempo de las preguntas
-        int Npreguntas; //cantidad
-        List<Grupo> Grupos;
-        List<int> Puntajes; //el vector de las preguntas deben conincidir en cuanto a indices a el de puntajes
+        
+        public List<int> Preguntas; //Indices de pregunta
+        public string Nombre; //Nombres y apellidos del alumno
+        public string Tipo; //Control parcial final
+        public int Tiempo;  //Tiempo del examen debe coincidir con la sumatoria de tiempo de las preguntas
+        public int Npreguntas; //cantidad
+        public List<Grupo> Grupos;
+        public List<int> Puntajes; //el vector de las preguntas deben conincidir en cuanto a indices a el de puntajes
+        public Curso curso;
 
         int SumatoriasPuntaje()
         {

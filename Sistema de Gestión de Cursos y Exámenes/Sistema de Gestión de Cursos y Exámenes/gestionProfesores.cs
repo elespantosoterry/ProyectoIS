@@ -186,6 +186,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         public List<Curso> grupos;
         public string nombre, apellido;
         public int DNI;
+        public List<Examen> examenes;
 
 
     }
