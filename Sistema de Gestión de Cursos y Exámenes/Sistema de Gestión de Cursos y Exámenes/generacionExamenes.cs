@@ -30,7 +30,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         public int puntaje_final;
 
 
-        int SumatoriasPuntaje()
+        public int SumatoriasPuntaje()
         {
             int suma = 0;
             for (int i = 0; i < Puntajes.Count; i++)
@@ -39,7 +39,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             }
             return suma;
         }
-        int SumatoriasTiempo()
+        public int SumatoriasTiempo()
         {
             int suma = 0;
             for(int i = 0 ; i < Preguntas.Count ; i++)
@@ -48,7 +48,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             }
             return suma;
         }
-        bool CambiarPregunta(int a, int b)//cambio de indices indice del examen con indice del banco
+        public bool CambiarPregunta(int a, int b)//cambio de indices indice del examen con indice del banco
         {
             if(b <= BD.g_PREGUNTAS_GLOBAL.Count)
             {
@@ -60,7 +60,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                 return false;
             }
         }
-        bool CambiarPuntaje(int a, int b)//Indice de la pregunta y el puntaje que se desea asignar
+        public bool CambiarPuntaje(int a, int b)//Indice de la pregunta y el puntaje que se desea asignar
         {
             Puntajes[a] = b;
             return true;
@@ -74,8 +74,10 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             var seed = Environment.TickCount;
             var random = new Random(seed);
             int value = random.Next(0, BD.g_PREGUNTAS_GLOBAL.Count);
+            int puntajeGeneral = 20 / Npreguntas;
             for (int i = 0; i < Npreguntas; i++)
             {
+                Puntajes.Add(puntajeGeneral);
                 int a = value;
                 if(BD.g_PREGUNTAS_GLOBAL[a].m_curso == curso)
                 {
@@ -131,6 +133,8 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                     doc.Add(new Paragraph(i));
                     doc.Add(new Paragraph("TIEMPO"));
                     doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[i]].tiempo));
+                    doc.Add(new Paragraph("Puntaje de la pregunta:"));
+                    doc.Add(new Paragraph(Puntajes[i]));
                     doc.Add(new Paragraph("Subraye la alternativa correcta:"));
                     doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[i]].pregunta));
                     for (int j = 0; j < BD.PREGUNTAS_GLOBAL[Preguntas[i]].incorrectasOP.Count; j++)
@@ -170,12 +174,36 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void GuardarExamen2_Click(object sender, EventArgs e)
         {
-            
+            string intString = IndiceExamen.Text;
+            int i = 0;
+            if (!Int32.TryParse(intString, out i))
+            {
+                i = -1;
+            }
+            intString = IndiceBanco.Text;
+            int j = 0;
+            if (!Int32.TryParse(intString, out j))
+            {
+                j = -1;
+            }
+            BD.g_PROFESOR_GLOBAL[BD.g_sesionID].examenes[0].CambiarPregunta(i,j);
         }
 
         private void GuardarExamen_Click(object sender, EventArgs e)
         {
-
+            string intString = IndiceExamenPuntaje.Text;
+            int i = 0;
+            if (!Int32.TryParse(intString, out i))
+            {
+                i = -1;
+            }
+            intString = PuntajeCambiar.Text;
+            int j = 0;
+            if (!Int32.TryParse(intString, out j))
+            {
+                j = -1;
+            }
+            BD.g_PROFESOR_GLOBAL[BD.g_sesionID].examenes[0].CambiarPuntaje(i, j);
         }
 
         private void calendarExamen_DateChanged(object sender, DateRangeEventArgs e)
@@ -230,6 +258,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void IndiceExamen_TextChanged(object sender, EventArgs e)
         {
+
 
         }
 
