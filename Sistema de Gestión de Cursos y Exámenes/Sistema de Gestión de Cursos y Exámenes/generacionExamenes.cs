@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 {
-    struct Examen
+    public struct Examen
     {
         List<int> Preguntas; //Indices de pregunta
         string Nombre; //Nombres y apellidos del alumno
