@@ -39,18 +39,14 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
             List<Profesor> Profesores = new List<Profesor>();
             Profesores = BD.g_PROFESOR_GLOBAL;
-<<<<<<< HEAD
             Profesor prof = new Profesor();
             prof.usuario = "profesor";
             prof.contraseña = "profesor";
             Profesores.Add(prof);
-=======
             //Profesor prof = new Profesor();
             //prof.usuario = "profesor";
             //prof.contraseña = "profesor";
             //Profesores.Add(prof);
-
->>>>>>> 490473d3957ed6f6fa90e91025f07a44cbdf9858
             List<string> Directores = new List<string>();
             Directores.Add("director");
             Directores.Add("Erick");
