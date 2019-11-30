@@ -16,7 +16,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new generacionExamenes());
         }
     }
 }

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 {
@@ -67,10 +70,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
             return true;
         }
-        void PedirDatosExamen()
-        {
 
-        }
     }
     public partial class generacionExamenes : Form
     {
@@ -142,6 +142,23 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         private void PuntajeCambiar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void GenerarPDF_Click(object sender, EventArgs e)
+        {
+            Document doc = new Document();
+            PdfWriter.GetInstance(doc, new FileStream("hola.pdf", FileMode.Create));
+            doc.Open();
+
+            Paragraph title = new Paragraph();
+            title.Font = FontFactory.GetFont(FontFactory.TIMES, 18f, BaseColor.BLUE);
+            title.Add("Hola Mundo!!");
+            doc.Add(title);
+
+            doc.Add(new Paragraph("Hola Mundo!!"));
+            doc.Add(new Paragraph("Parrafo 1"));
+            doc.Add(new Paragraph("Parrafo 2"));
+            doc.Close();
         }
     }
 }

@@ -55,8 +55,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.GuardarExamen = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.GenerarPDF = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // titulo
@@ -94,7 +98,7 @@
             // NumeroPreguntas
             // 
             this.NumeroPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.NumeroPreguntas.Location = new System.Drawing.Point(19, 479);
+            this.NumeroPreguntas.Location = new System.Drawing.Point(19, 468);
             this.NumeroPreguntas.Name = "NumeroPreguntas";
             this.NumeroPreguntas.Size = new System.Drawing.Size(123, 30);
             this.NumeroPreguntas.TabIndex = 31;
@@ -106,7 +110,7 @@
             this.EtiquetaNpreguntas.BackColor = System.Drawing.Color.Transparent;
             this.EtiquetaNpreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.EtiquetaNpreguntas.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaNpreguntas.Location = new System.Drawing.Point(14, 451);
+            this.EtiquetaNpreguntas.Location = new System.Drawing.Point(14, 440);
             this.EtiquetaNpreguntas.Name = "EtiquetaNpreguntas";
             this.EtiquetaNpreguntas.Size = new System.Drawing.Size(202, 25);
             this.EtiquetaNpreguntas.TabIndex = 24;
@@ -116,7 +120,7 @@
             // 
             this.SeleccionarDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.SeleccionarDuracion.FormattingEnabled = true;
-            this.SeleccionarDuracion.Location = new System.Drawing.Point(19, 415);
+            this.SeleccionarDuracion.Location = new System.Drawing.Point(19, 404);
             this.SeleccionarDuracion.Name = "SeleccionarDuracion";
             this.SeleccionarDuracion.Size = new System.Drawing.Size(329, 33);
             this.SeleccionarDuracion.TabIndex = 23;
@@ -128,7 +132,7 @@
             this.EtiquetaDuracion.BackColor = System.Drawing.Color.Transparent;
             this.EtiquetaDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.EtiquetaDuracion.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaDuracion.Location = new System.Drawing.Point(14, 387);
+            this.EtiquetaDuracion.Location = new System.Drawing.Point(14, 376);
             this.EtiquetaDuracion.Name = "EtiquetaDuracion";
             this.EtiquetaDuracion.Size = new System.Drawing.Size(90, 25);
             this.EtiquetaDuracion.TabIndex = 22;
@@ -136,7 +140,7 @@
             // 
             // calendarExamen
             // 
-            this.calendarExamen.Location = new System.Drawing.Point(53, 216);
+            this.calendarExamen.Location = new System.Drawing.Point(53, 205);
             this.calendarExamen.MaxSelectionCount = 365;
             this.calendarExamen.Name = "calendarExamen";
             this.calendarExamen.TabIndex = 21;
@@ -148,7 +152,7 @@
             this.EtiquetaFecha.BackColor = System.Drawing.Color.Transparent;
             this.EtiquetaFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.EtiquetaFecha.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaFecha.Location = new System.Drawing.Point(14, 192);
+            this.EtiquetaFecha.Location = new System.Drawing.Point(14, 181);
             this.EtiquetaFecha.Name = "EtiquetaFecha";
             this.EtiquetaFecha.Size = new System.Drawing.Size(67, 25);
             this.EtiquetaFecha.TabIndex = 17;
@@ -158,7 +162,7 @@
             // 
             this.SeleccionarGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.SeleccionarGrupo.FormattingEnabled = true;
-            this.SeleccionarGrupo.Location = new System.Drawing.Point(19, 156);
+            this.SeleccionarGrupo.Location = new System.Drawing.Point(19, 145);
             this.SeleccionarGrupo.Name = "SeleccionarGrupo";
             this.SeleccionarGrupo.Size = new System.Drawing.Size(329, 33);
             this.SeleccionarGrupo.TabIndex = 16;
@@ -170,17 +174,17 @@
             this.EtiquetaGrupo.BackColor = System.Drawing.Color.Transparent;
             this.EtiquetaGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.EtiquetaGrupo.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaGrupo.Location = new System.Drawing.Point(14, 128);
+            this.EtiquetaGrupo.Location = new System.Drawing.Point(14, 117);
             this.EtiquetaGrupo.Name = "EtiquetaGrupo";
-            this.EtiquetaGrupo.Size = new System.Drawing.Size(66, 25);
+            this.EtiquetaGrupo.Size = new System.Drawing.Size(51, 25);
             this.EtiquetaGrupo.TabIndex = 15;
-            this.EtiquetaGrupo.Text = "Grupo";
+            this.EtiquetaGrupo.Text = "Tipo";
             // 
             // SeleccionarCurso
             // 
             this.SeleccionarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.SeleccionarCurso.FormattingEnabled = true;
-            this.SeleccionarCurso.Location = new System.Drawing.Point(19, 92);
+            this.SeleccionarCurso.Location = new System.Drawing.Point(19, 81);
             this.SeleccionarCurso.Name = "SeleccionarCurso";
             this.SeleccionarCurso.Size = new System.Drawing.Size(329, 33);
             this.SeleccionarCurso.TabIndex = 14;
@@ -192,7 +196,7 @@
             this.EtiquetaCurso.BackColor = System.Drawing.Color.Transparent;
             this.EtiquetaCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.EtiquetaCurso.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaCurso.Location = new System.Drawing.Point(14, 64);
+            this.EtiquetaCurso.Location = new System.Drawing.Point(14, 53);
             this.EtiquetaCurso.Name = "EtiquetaCurso";
             this.EtiquetaCurso.Size = new System.Drawing.Size(65, 25);
             this.EtiquetaCurso.TabIndex = 5;
@@ -371,11 +375,45 @@
             this.GuardarExamen.UseVisualStyleBackColor = true;
             this.GuardarExamen.Click += new System.EventHandler(this.GuardarExamen_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.GenerarPDF);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Location = new System.Drawing.Point(843, 58);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(376, 584);
+            this.panel3.TabIndex = 32;
+            // 
+            // GenerarPDF
+            // 
+            this.GenerarPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.GenerarPDF.Location = new System.Drawing.Point(71, 73);
+            this.GenerarPDF.Name = "GenerarPDF";
+            this.GenerarPDF.Size = new System.Drawing.Size(220, 47);
+            this.GenerarPDF.TabIndex = 31;
+            this.GenerarPDF.Text = "Generar PDF";
+            this.GenerarPDF.UseVisualStyleBackColor = true;
+            this.GenerarPDF.Click += new System.EventHandler(this.GenerarPDF_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(125)))), ((int)(((byte)(218)))));
+            this.label13.Location = new System.Drawing.Point(13, 13);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(69, 31);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "PDF";
+            // 
             // generacionExamenes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.titulo);
@@ -386,6 +424,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,5 +460,8 @@
         private System.Windows.Forms.TextBox IndiceExamenPuntaje;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button GuardarExamen2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button GenerarPDF;
+        private System.Windows.Forms.Label label13;
     }
 }
