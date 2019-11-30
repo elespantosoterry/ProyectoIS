@@ -15,14 +15,15 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 {
     public struct Examen
     {
-        List<int> Preguntas; //Indices de pregunta
-        string Nombre; //Nombres y apellidos del alumno
-        string Tipo; //Control parcial final
-        int Tiempo;  //Tiempo del examen debe coincidir con la sumatoria de tiempo de las preguntas
-        int Npreguntas; //cantidad
-        List<Grupo> Grupos;
-        List<int> Puntajes; //el vector de las preguntas deben conincidir en cuanto a indices a el de puntajes
-
+        public List<int> Preguntas; //Indices de pregunta
+        public string Nombre; //Nombres y apellidos del alumno
+        public string Tipo; //Control parcial final
+        public int Tiempo;  //Tiempo del examen debe coincidir con la sumatoria de tiempo de las preguntas
+        public int Npreguntas; //cantidad
+        public List<Grupo> Grupos;
+        public string Curso;
+        public List<int> Puntajes; //el vector de las preguntas deben conincidir en cuanto a indices a el de puntajes
+        public DateTime inicio;
         int SumatoriasPuntaje()
         {
             int suma = 0;
@@ -67,7 +68,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             var seed = Environment.TickCount;
             var random = new Random(seed);
             int value = random.Next(0, BD.g_PREGUNTAS_GLOBAL.Count);
-
+            for (int i = 0; i < Npreguntas; i++)
+            {
+                int a = value;
+                //BD.g_PREGUNTAS_GLOBAL[a].m_curso
+            }
             return true;
         }
 
@@ -78,15 +83,25 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
             InitializeComponent();
         }
-
+        
         private void generacionExamenes_Load(object sender, EventArgs e)
         {
-
+            SeleccionarTipo.Items.Add("Control");
+            SeleccionarTipo.Items.Add("Examen Parcial");
+            SeleccionarTipo.Items.Add("Examen Final");
+            SeleccionarDuracion.Items.Add(30);
+            SeleccionarDuracion.Items.Add(60);
+            SeleccionarDuracion.Items.Add(90);
+            SeleccionarDuracion.Items.Add(120);
+            for (int i = 0; i < BD.g_PROFESOR_GLOBAL[BD.g_sesionID].cursos.Count; i++)
+            {
+                SeleccionarCurso.Items.Add(BD.g_PROFESOR_GLOBAL[BD.g_sesionID].cursos[i]);
+            }
         }
 
         private void GuardarExamen2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void GuardarExamen_Click(object sender, EventArgs e)
@@ -101,7 +116,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void SeleccionarGrupo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SeleccionarCurso_SelectedIndexChanged(object sender, EventArgs e)
@@ -121,6 +136,25 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void guardarConfExamen_Click(object sender, EventArgs e)
         {
+            Examen nuevo = new Examen();
+            
+            nuevo.inicio = calendarExamen.SelectionStart;
+            string intString = NumeroPreguntas.Text;
+            int i = 0;
+            if (!Int32.TryParse(intString, out i))
+            {
+                i = -1;
+            }
+            nuevo.Npreguntas = i;
+            nuevo.Tipo = SeleccionarTipo.Text;
+            intString = SeleccionarDuracion.Text;
+            if (!Int32.TryParse(intString, out i))
+            {
+                i = -1;
+            }
+            nuevo.Tiempo = i;
+            nuevo.Curso = SeleccionarCurso.Text;
+            BD.g_PROFESOR_GLOBAL[BD.g_sesionID].examenes.Add(nuevo);
 
         }
 
@@ -147,11 +181,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         private void GenerarPDF_Click(object sender, EventArgs e)
         {
             Document doc = new Document();
-            PdfWriter.GetInstance(doc, new FileStream("hola.pdf", FileMode.Create));
+            PdfWriter.GetInstance(doc, new FileStream("Examen.pdf", FileMode.Create));
             doc.Open();
 
             Paragraph title = new Paragraph();
-            title.Font = FontFactory.GetFont(FontFactory.TIMES, 18f, BaseColor.BLUE);
+            title.Font = FontFactory.GetFont(FontFactory.TIMES, 18f, BaseColor.BLACK);
             title.Add("Hola Mundo!!");
             doc.Add(title);
 

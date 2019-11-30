@@ -36,7 +36,7 @@
             this.EtiquetaDuracion = new System.Windows.Forms.Label();
             this.calendarExamen = new System.Windows.Forms.MonthCalendar();
             this.EtiquetaFecha = new System.Windows.Forms.Label();
-            this.SeleccionarGrupo = new System.Windows.Forms.ComboBox();
+            this.SeleccionarTipo = new System.Windows.Forms.ComboBox();
             this.EtiquetaGrupo = new System.Windows.Forms.Label();
             this.SeleccionarCurso = new System.Windows.Forms.ComboBox();
             this.EtiquetaCurso = new System.Windows.Forms.Label();
@@ -58,6 +58,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.GenerarPDF = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
+            this.Retroceder = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -84,13 +85,13 @@
             this.panel1.Controls.Add(this.EtiquetaDuracion);
             this.panel1.Controls.Add(this.calendarExamen);
             this.panel1.Controls.Add(this.EtiquetaFecha);
-            this.panel1.Controls.Add(this.SeleccionarGrupo);
+            this.panel1.Controls.Add(this.SeleccionarTipo);
             this.panel1.Controls.Add(this.EtiquetaGrupo);
             this.panel1.Controls.Add(this.SeleccionarCurso);
             this.panel1.Controls.Add(this.EtiquetaCurso);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.guardarConfExamen);
-            this.panel1.Location = new System.Drawing.Point(20, 58);
+            this.panel1.Location = new System.Drawing.Point(20, 71);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(376, 584);
             this.panel1.TabIndex = 2;
@@ -158,15 +159,15 @@
             this.EtiquetaFecha.TabIndex = 17;
             this.EtiquetaFecha.Text = "Fecha";
             // 
-            // SeleccionarGrupo
+            // SeleccionarTipo
             // 
-            this.SeleccionarGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SeleccionarGrupo.FormattingEnabled = true;
-            this.SeleccionarGrupo.Location = new System.Drawing.Point(19, 145);
-            this.SeleccionarGrupo.Name = "SeleccionarGrupo";
-            this.SeleccionarGrupo.Size = new System.Drawing.Size(329, 33);
-            this.SeleccionarGrupo.TabIndex = 16;
-            this.SeleccionarGrupo.SelectedIndexChanged += new System.EventHandler(this.SeleccionarGrupo_SelectedIndexChanged);
+            this.SeleccionarTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.SeleccionarTipo.FormattingEnabled = true;
+            this.SeleccionarTipo.Location = new System.Drawing.Point(19, 145);
+            this.SeleccionarTipo.Name = "SeleccionarTipo";
+            this.SeleccionarTipo.Size = new System.Drawing.Size(329, 33);
+            this.SeleccionarTipo.TabIndex = 16;
+            this.SeleccionarTipo.SelectedIndexChanged += new System.EventHandler(this.SeleccionarGrupo_SelectedIndexChanged);
             // 
             // EtiquetaGrupo
             // 
@@ -240,7 +241,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.GuardarExamen);
-            this.panel2.Location = new System.Drawing.Point(436, 58);
+            this.panel2.Location = new System.Drawing.Point(436, 71);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(376, 584);
             this.panel2.TabIndex = 24;
@@ -380,7 +381,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.GenerarPDF);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Location = new System.Drawing.Point(843, 58);
+            this.panel3.Location = new System.Drawing.Point(846, 71);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(376, 584);
             this.panel3.TabIndex = 32;
@@ -408,11 +409,22 @@
             this.label13.TabIndex = 4;
             this.label13.Text = "PDF";
             // 
+            // Retroceder
+            // 
+            this.Retroceder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Retroceder.Location = new System.Drawing.Point(458, 12);
+            this.Retroceder.Name = "Retroceder";
+            this.Retroceder.Size = new System.Drawing.Size(220, 47);
+            this.Retroceder.TabIndex = 32;
+            this.Retroceder.Text = "Retroceder";
+            this.Retroceder.UseVisualStyleBackColor = true;
+            // 
             // generacionExamenes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1155, 681);
+            this.Controls.Add(this.Retroceder);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -439,7 +451,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button guardarConfExamen;
         private System.Windows.Forms.Label EtiquetaFecha;
-        private System.Windows.Forms.ComboBox SeleccionarGrupo;
+        private System.Windows.Forms.ComboBox SeleccionarTipo;
         private System.Windows.Forms.Label EtiquetaGrupo;
         private System.Windows.Forms.ComboBox SeleccionarCurso;
         private System.Windows.Forms.ComboBox SeleccionarDuracion;
@@ -463,5 +475,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button GenerarPDF;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button Retroceder;
     }
 }

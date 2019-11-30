@@ -98,6 +98,7 @@
             this.calendarPeriodo.MaxSelectionCount = 365;
             this.calendarPeriodo.Name = "calendarPeriodo";
             this.calendarPeriodo.TabIndex = 20;
+            this.calendarPeriodo.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calendarPeriodo_DateChanged);
             // 
             // label1
             // 
