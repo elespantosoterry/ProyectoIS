@@ -339,6 +339,7 @@
             this.Controls.Add(this.titulo);
             this.Name = "gestionCursos";
             this.Text = "gestionCursos";
+            this.Load += new System.EventHandler(this.gestionCursos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

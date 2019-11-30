@@ -20,6 +20,10 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             get { return g_PREGUNTAS_CMP_GLOBAL; }
             set { g_PREGUNTAS_CMP_GLOBAL = value; }
         }*/
+        /*public static Pregunta unaPLLENAR = new Pregunta(1);
+        public static Pregunta unaPCONCRETA = new Pregunta(2);
+        public static Pregunta unaPALTERNATIVA = new Pregunta(3);
+        public static Pregunta unaPVERDADEROFALSO = new Pregunta(4);*/
         public static List<Pregunta> g_PREGUNTAS_GLOBAL = new List<Pregunta>();
         public static List<Pregunta> PREGUNTAS_GLOBAL
         {

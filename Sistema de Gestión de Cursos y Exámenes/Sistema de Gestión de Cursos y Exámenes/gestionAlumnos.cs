@@ -25,12 +25,12 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
 
             matriculaGrupos.Items.Clear();
-            retiroGrupos.Items.Clear();
+            //retiroGrupos.Items.Clear();
             for (int i = 0; i < BD.GRUPO_GLOBAL.Count; i++)
             {
                 string nuevo = BD.GRUPO_GLOBAL[i].identificador;
                 matriculaGrupos.Items.Add(nuevo);
-                retiroGrupos.Items.Add(nuevo);
+                //retiroGrupos.Items.Add(nuevo);
             }
         }
             private void guardarNuevoCursoBT_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             foo.apellidos = this.nuevoApellido.Text;
             foo.usuario = this.nuevoUsuario.Text;
             foo.contraseña = this.nuevaContraseña.Text;
-
+            foo.codigo = this.nuevoCodigo.Text;
             BD.ALUMNO_GLOBAL.Add(foo);
 
 
@@ -54,6 +54,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             this.nuevoApellido.Text= string.Empty;
             this.nuevoUsuario.Text= string.Empty;
             this.nuevaContraseña.Text= string.Empty;
+            this.nuevoCodigo.Text = string.Empty;
 
 
             MessageBox.Show("Creado exitosamente");
@@ -70,18 +71,54 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         
         private void asignarCursoBT_Click(object sender, EventArgs e)
         {
-            bool encontro = false;
+            if (BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex].cupos < 1)
+            {
+                MessageBox.Show("No hay cupos para matricular a alguien mas");
+                return;
+            }
+
+            bool encontro = false,enGrupo=false;
             for (int i = 0; i < BD.ALUMNO_GLOBAL.Count; i++)
             {
                 if (BD.ALUMNO_GLOBAL[i].codigo == codigoMatricula.Text)
                 {
                     encontro = true;
-                    BD.ALUMNO_GLOBAL[i].grupos.Add(BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex]);
+
+
+                    //Grupo foo = (Grupo)(BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex]).Clone();
+                    Grupo foo = new Grupo();
+                    foo = BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex];
+                    
+                    for(int j=0;j< BD.ALUMNO_GLOBAL[i].grupos.Count; j++)
+                    {
+                        if(foo==BD.ALUMNO_GLOBAL[i].grupos[j])
+                        {
+                            enGrupo = true;
+                        }
+                    }
+                    if (enGrupo ==true )
+                    {
+                        MessageBox.Show("Ya estaba registrado en ese grupo");
+                        break;
+                    }
+                    BD.ALUMNO_GLOBAL[i].grupos.Add(foo);
+                    BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex].cupos -= 1;
                     break;
-                }
-                
+                } 
             }
-            
+            if (encontro == true && enGrupo==false)
+            {
+                MessageBox.Show("Creado exitosamente");
+            }
+            else
+            {
+                if (encontro == false)
+                    MessageBox.Show("No se encontró ese Código de Alumno");
+            }
+
+            matriculaGrupos.Text = string.Empty;
+            cuposMatricula.Text = string.Empty;
+            codigoMatricula.Text = string.Empty;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -96,12 +133,64 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
             cuposMatricula.Text =(BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex].cupos).ToString();
         }
+
+        private void eliminarCursoBT_Click(object sender, EventArgs e)
+        {
+            bool encontro = false;
+            //retiroGrupos.Items.Clear();
+            int indAlumno;
+            for (int i = 0; i < BD.ALUMNO_GLOBAL.Count; i++)
+            {
+                if (BD.ALUMNO_GLOBAL[i].codigo == codigoRetiro.Text)
+                {
+                    encontro = true;
+                    
+                    BD.ALUMNO_GLOBAL[i].grupos.RemoveAt(retiroGrupos.SelectedIndex);
+                    //BD.GRUPO_GLOBAL[retiroGrupos.SelectedIndex].cupos += 1;
+                    break;
+                }
+            }
+            codigoRetiro.Text = string.Empty;
+            
+
+        }
+
+        private void codigoRetiro_TextChanged(object sender, EventArgs e)
+        {
+            bool encontro = false;
+            retiroGrupos.Items.Clear();
+            //int indAlumno;
+            for (int i = 0; i < BD.ALUMNO_GLOBAL.Count; i++)
+            {
+                if (BD.ALUMNO_GLOBAL[i].codigo == codigoRetiro.Text)
+                {
+                    encontro = true;
+                    for(int j = 0; j < BD.ALUMNO_GLOBAL[i].grupos.Count;j++)
+                    {
+                        string nuevo = BD.ALUMNO_GLOBAL[i].grupos[j].identificador;
+                        matriculaGrupos.Items.Add(nuevo);
+                    }
+                    //indAlumno=i;
+                    //BD.GRUPO_GLOBAL[retiroGrupos.SelectedIndex].cupos += 1;
+                    break;
+                }
+            }
+
+            
+            
+
+        }
+
+        private void gestionAlumnos_Load(object sender, EventArgs e)
+        {
+            refreshItems();
+        }
     }
     public class Alumno
     {
         public string usuario,contraseña,nombres,apellidos,codigo;
-        public List<Grupo> grupos;
-        public List<Examen> examenes;
+        public List<Grupo> grupos=new List<Grupo>();
+        public List<Examen> examenes= new List<Examen>();
 
 
 

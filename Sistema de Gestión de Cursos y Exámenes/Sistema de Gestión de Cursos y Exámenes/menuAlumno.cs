@@ -27,7 +27,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            rendirExamen rE = new rendirExamen();
+            examenesDisponibles rE = new examenesDisponibles();
             rE.Show();
         }
 

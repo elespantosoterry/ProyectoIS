@@ -94,9 +94,15 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             this.Close();
         }
 
+<<<<<<< HEAD
         private void calendarPeriodo_DateChanged(object sender, DateRangeEventArgs e)
         {
 
+=======
+        private void gestionPeriodos_Load(object sender, EventArgs e)
+        {
+            refreshPeriodos();
+>>>>>>> 490473d3957ed6f6fa90e91025f07a44cbdf9858
         }
     }
     public class Periodo_Academico
