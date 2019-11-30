@@ -418,6 +418,7 @@
             this.Retroceder.TabIndex = 32;
             this.Retroceder.Text = "Retroceder";
             this.Retroceder.UseVisualStyleBackColor = true;
+            this.Retroceder.Click += new System.EventHandler(this.Retroceder_Click);
             // 
             // generacionExamenes
             // 

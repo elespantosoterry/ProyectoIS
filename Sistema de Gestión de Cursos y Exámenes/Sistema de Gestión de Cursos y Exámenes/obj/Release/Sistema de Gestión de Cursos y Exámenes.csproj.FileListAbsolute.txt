@@ -142,3 +142,4 @@ C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de 
 >>>>>>> 7ccc7c815b7c7cd1e4cd5f9cbfdbd705a992eeaa
 C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.bancoPreguntas.resources
 C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.bancoPreguntas.resources
+C:\Users\Asus\Desktop\SIS\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.programarExamen.resources

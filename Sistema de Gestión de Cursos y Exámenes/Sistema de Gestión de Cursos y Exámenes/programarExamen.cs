@@ -46,6 +46,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menuProfesor mP = new menuProfesor();
+            mP.Show();
+        }
     }
 }
