@@ -174,6 +174,16 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void gestionProfesores_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }
@@ -182,8 +192,13 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
     {
         
         public string usuario,contraseña;
-        public List<Curso> cursos;
-        public List<Curso> grupos;
+        public List<Curso> cursos = new List<Curso>();
+<<<<<<< HEAD
+        public List<Curso> grupos = new List<Curso>();
+        public List<Examen> examenes;
+=======
+        public List<Grupo> grupos= new List<Grupo>();
+>>>>>>> 490473d3957ed6f6fa90e91025f07a44cbdf9858
         public string nombre, apellido;
         public int DNI;
         public List<Examen> examenes;

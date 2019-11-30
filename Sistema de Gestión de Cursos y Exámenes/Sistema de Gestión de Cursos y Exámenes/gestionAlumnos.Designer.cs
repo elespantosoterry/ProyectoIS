@@ -426,6 +426,7 @@
             this.Controls.Add(this.titulo);
             this.Name = "gestionAlumnos";
             this.Text = "gestionAlumnos";
+            this.Load += new System.EventHandler(this.gestionAlumnos_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
