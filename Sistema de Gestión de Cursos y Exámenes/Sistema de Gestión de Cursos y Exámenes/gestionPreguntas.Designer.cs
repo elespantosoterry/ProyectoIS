@@ -217,6 +217,7 @@
             this.ViewBanco.TabIndex = 20;
             this.ViewBanco.Text = "Ver Banco de Preguntas";
             this.ViewBanco.UseVisualStyleBackColor = true;
+            this.ViewBanco.Click += new System.EventHandler(this.ViewBanco_Click);
             // 
             // button5
             // 
