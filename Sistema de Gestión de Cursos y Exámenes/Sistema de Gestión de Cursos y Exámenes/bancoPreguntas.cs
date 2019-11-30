@@ -90,5 +90,10 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             }
             return i;
         }
+
+        private void verBANCO_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

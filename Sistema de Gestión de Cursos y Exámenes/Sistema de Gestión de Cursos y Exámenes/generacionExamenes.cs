@@ -68,7 +68,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
 
         }
-        bool GenerarExamenAleatorio()
+        public bool GenerarExamenAleatorio()
         {
             var seed = Environment.TickCount;
             var random = new Random(seed);
@@ -76,7 +76,14 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             for (int i = 0; i < Npreguntas; i++)
             {
                 int a = value;
-                //BD.g_PREGUNTAS_GLOBAL[a].m_curso
+                if(BD.g_PREGUNTAS_GLOBAL[a].m_curso == curso)
+                {
+                    Preguntas.Add(a);
+                }
+                else
+                {
+                    i--;
+                }
             }
             return true;
         }
@@ -159,6 +166,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             }
             nuevo.Tiempo = i;
             nuevo.Curso = SeleccionarCurso.Text;
+            nuevo.GenerarExamenAleatorio();
             BD.g_PROFESOR_GLOBAL[BD.g_sesionID].examenes.Add(nuevo);
 
         }
