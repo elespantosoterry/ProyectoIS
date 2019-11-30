@@ -19,6 +19,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
             InitializeComponent();
         }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -117,6 +118,10 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
             }
             //cursoEliminado.SelectedIndex = 0;
+        }
+        private void Form_Load(object sender, EventArgs e)
+        {
+            refreshItemsEliminado();
         }
         private void guardarNuevoCursoBT_Click(object sender, EventArgs e)
         {
@@ -242,12 +247,5 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
     }
 
-    public class Grupo
-    {
-        public Profesor encargado;
-        public Curso curso;
-        public Periodo_Academico periodo;
-        public string identificador;
-
-    }
+    
 }

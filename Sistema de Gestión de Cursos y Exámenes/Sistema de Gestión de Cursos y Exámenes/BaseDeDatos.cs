@@ -33,6 +33,12 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             get { return g_PROFESOR_GLOBAL; }
             set { g_PROFESOR_GLOBAL = value; }
         }
+        public static List<Alumno> g_ALUMNO_GLOBAL = new List<Alumno>();
+        public static List<Alumno> ALUMNO_GLOBAL
+        {
+            get { return g_ALUMNO_GLOBAL; }
+            set { g_ALUMNO_GLOBAL = value; }
+        }
 
         public static int g_sesionID;
         public static int g_sesionTipo;

@@ -211,8 +211,14 @@
     <EmbeddedResource Include="generacionExamenes.resx">
       <DependentUpon>generacionExamenes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gestionAlumnos.resx">
+      <DependentUpon>gestionAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gestionCursos.resx">
       <DependentUpon>gestionCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestionGrupos.resx">
+      <DependentUpon>gestionGrupos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gestionPeriodos.resx">
       <DependentUpon>gestionPeriodos.cs</DependentUpon>
