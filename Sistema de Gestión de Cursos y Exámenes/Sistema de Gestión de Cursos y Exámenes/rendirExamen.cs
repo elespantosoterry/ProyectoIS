@@ -37,6 +37,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         private void button2_Click(object sender, EventArgs e)
         {
             BD.ALUMNO_GLOBAL[BD.g_sesionID].examenes.Remove(BD.ALUMNO_GLOBAL[BD.g_sesionID].examenes[BD.g_exam]);
+            MessageBox.Show("TU NOTA ---> " + BD.puntaje_ex.ToString());
             this.Hide();
             examenesDisponibles eD = new examenesDisponibles();
             eD.Show();
@@ -52,6 +53,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                 Pregunta p = new Pregunta();
                 p = BD.PREGUNTAS_GLOBAL[exam.Preguntas[0]];
                 label2.Text = p.pregunta;
+
                 if(p.tipo == "opcion multiple")
                 {
                     label3.Text = p.incorrectasOP[0];
@@ -160,11 +162,11 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
                 Pregunta p = new Pregunta();
                 p = BD.PREGUNTAS_GLOBAL[exam.Preguntas[0]];
-                label2.Text = p.pregunta;
-                    if(textBox1.Text == p.respuestasOP[0] || textBox1.Text == p.respuestaCMP)
-                    {
-                        puntaje += exam.Puntajes[0];
-                    }
+
+                if(textBox1.Text == p.respuestasOP[0] || textBox1.Text == p.respuestaCMP)
+                {
+                    puntaje += exam.Puntajes[0];
+                }
 
 
             }
@@ -175,7 +177,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
                 Pregunta p = new Pregunta();
                 p = BD.PREGUNTAS_GLOBAL[exam.Preguntas[1]];
-                label2.Text = p.pregunta;
+
                 if (textBox1.Text == p.respuestasOP[0] || textBox1.Text == p.respuestaCMP)
                 {
                     puntaje += exam.Puntajes[1];
@@ -221,7 +223,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                 }
             }
 
-            MessageBox.Show("TU NOTA" + puntaje.ToString());
+            BD.puntaje_ex = puntaje;
         }
     }
 }
