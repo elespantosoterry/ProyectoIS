@@ -36,15 +36,11 @@
             this.ConcretaCheck = new System.Windows.Forms.RadioButton();
             this.AlternativaCheck = new System.Windows.Forms.RadioButton();
             this.ChoiceCheck = new System.Windows.Forms.RadioButton();
-            this.PairCheck = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.Reglones = new System.Windows.Forms.NumericUpDown();
             this.AlternativaIncorrecta = new System.Windows.Forms.TextBox();
             this.UploadCorrecta = new System.Windows.Forms.Button();
             this.ChoiceIncorrecta = new System.Windows.Forms.TextBox();
-            this.PairOne = new System.Windows.Forms.TextBox();
-            this.PairTwo = new System.Windows.Forms.TextBox();
-            this.PairUpload = new System.Windows.Forms.Button();
             this.GUARDARbancoPregunta = new System.Windows.Forms.Button();
             this.ViewBanco = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -155,18 +151,6 @@
             this.ChoiceCheck.Text = "Verdadero / Falso";
             this.ChoiceCheck.UseVisualStyleBackColor = true;
             // 
-            // PairCheck
-            // 
-            this.PairCheck.AutoSize = true;
-            this.PairCheck.Location = new System.Drawing.Point(15, 534);
-            this.PairCheck.Margin = new System.Windows.Forms.Padding(4);
-            this.PairCheck.Name = "PairCheck";
-            this.PairCheck.Size = new System.Drawing.Size(128, 21);
-            this.PairCheck.TabIndex = 8;
-            this.PairCheck.TabStop = true;
-            this.PairCheck.Text = "Emparejamiento";
-            this.PairCheck.UseVisualStyleBackColor = true;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -215,36 +199,6 @@
             this.ChoiceIncorrecta.TabIndex = 13;
             this.ChoiceIncorrecta.Text = "Escriba aqui la alternativa";
             // 
-            // PairOne
-            // 
-            this.PairOne.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.PairOne.Location = new System.Drawing.Point(33, 563);
-            this.PairOne.Margin = new System.Windows.Forms.Padding(4);
-            this.PairOne.Name = "PairOne";
-            this.PairOne.Size = new System.Drawing.Size(123, 23);
-            this.PairOne.TabIndex = 14;
-            this.PairOne.Text = "Preposicion";
-            // 
-            // PairTwo
-            // 
-            this.PairTwo.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.PairTwo.Location = new System.Drawing.Point(176, 563);
-            this.PairTwo.Margin = new System.Windows.Forms.Padding(4);
-            this.PairTwo.Name = "PairTwo";
-            this.PairTwo.Size = new System.Drawing.Size(123, 23);
-            this.PairTwo.TabIndex = 15;
-            this.PairTwo.Text = "Respuesta";
-            // 
-            // PairUpload
-            // 
-            this.PairUpload.Location = new System.Drawing.Point(334, 563);
-            this.PairUpload.Name = "PairUpload";
-            this.PairUpload.Size = new System.Drawing.Size(75, 23);
-            this.PairUpload.TabIndex = 16;
-            this.PairUpload.Text = "+";
-            this.PairUpload.UseVisualStyleBackColor = true;
-            this.PairUpload.Click += new System.EventHandler(this.PairUpload_Click);
-            // 
             // GUARDARbancoPregunta
             // 
             this.GUARDARbancoPregunta.Location = new System.Drawing.Point(666, 237);
@@ -272,6 +226,7 @@
             this.button5.TabIndex = 21;
             this.button5.Text = "Retroceder";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // ChoiceCorrecta
             // 
@@ -336,7 +291,7 @@
             // Time
             // 
             this.Time.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.Time.Location = new System.Drawing.Point(120, 622);
+            this.Time.Location = new System.Drawing.Point(120, 575);
             this.Time.Margin = new System.Windows.Forms.Padding(4);
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(212, 23);
@@ -347,7 +302,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 618);
+            this.label7.Location = new System.Drawing.Point(28, 571);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 25);
@@ -412,15 +367,11 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.ViewBanco);
             this.Controls.Add(this.GUARDARbancoPregunta);
-            this.Controls.Add(this.PairUpload);
-            this.Controls.Add(this.PairTwo);
-            this.Controls.Add(this.PairOne);
             this.Controls.Add(this.ChoiceIncorrecta);
             this.Controls.Add(this.UploadCorrecta);
             this.Controls.Add(this.AlternativaIncorrecta);
             this.Controls.Add(this.Reglones);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.PairCheck);
             this.Controls.Add(this.ChoiceCheck);
             this.Controls.Add(this.AlternativaCheck);
             this.Controls.Add(this.ConcretaCheck);
@@ -450,15 +401,11 @@
         private System.Windows.Forms.RadioButton ConcretaCheck;
         private System.Windows.Forms.RadioButton AlternativaCheck;
         private System.Windows.Forms.RadioButton ChoiceCheck;
-        private System.Windows.Forms.RadioButton PairCheck;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown Reglones;
         private System.Windows.Forms.TextBox AlternativaIncorrecta;
         private System.Windows.Forms.Button UploadCorrecta;
         private System.Windows.Forms.TextBox ChoiceIncorrecta;
-        private System.Windows.Forms.TextBox PairOne;
-        private System.Windows.Forms.TextBox PairTwo;
-        private System.Windows.Forms.Button PairUpload;
         private System.Windows.Forms.Button GUARDARbancoPregunta;
         private System.Windows.Forms.Button ViewBanco;
         private System.Windows.Forms.Button button5;

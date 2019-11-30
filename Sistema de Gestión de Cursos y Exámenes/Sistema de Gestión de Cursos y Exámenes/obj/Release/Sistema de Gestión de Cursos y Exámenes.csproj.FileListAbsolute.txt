@@ -84,3 +84,28 @@ C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y E
 C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.xml
 C:\Users\USUARIO\Desktop\Software I\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.CopyComplete
 >>>>>>> fadcbd86c97628c8ecb0f6d23c54e7b77a1f7e4f
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.exe.config
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.exe
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\Sistema de Gestión de Cursos y Exámenes.pdb
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.dll
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Release\itextsharp.xml
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csprojAssemblyReference.cache
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.examenesDisponibles.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.generacionExamenes.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionAlumnos.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionCursos.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionGrupos.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionPeriodos.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionPreguntas.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionProfesores.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionUnidadesTematicas.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.login.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuAlumno.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuDirector.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuProfesor.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.Properties.Resources.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema_de_Gestión_de_Cursos_y_Exámenes.rendirExamen.resources
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.GenerateResource.cache
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.csproj.CopyComplete
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.exe
+D:\UCSP\CCOMP\2019-2\ING SOFTWARE 1\pFinal\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Release\Sistema de Gestión de Cursos y Exámenes.pdb
