@@ -30,31 +30,31 @@
         {
             this.titulo = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.NumeroPreguntas = new System.Windows.Forms.TextBox();
+            this.EtiquetaNpreguntas = new System.Windows.Forms.Label();
+            this.SeleccionarDuracion = new System.Windows.Forms.ComboBox();
+            this.EtiquetaDuracion = new System.Windows.Forms.Label();
+            this.calendarExamen = new System.Windows.Forms.MonthCalendar();
+            this.EtiquetaFecha = new System.Windows.Forms.Label();
+            this.SeleccionarGrupo = new System.Windows.Forms.ComboBox();
+            this.EtiquetaGrupo = new System.Windows.Forms.Label();
+            this.SeleccionarCurso = new System.Windows.Forms.ComboBox();
             this.EtiquetaCurso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guardarConfExamen = new System.Windows.Forms.Button();
-            this.SeleccionarCurso = new System.Windows.Forms.ComboBox();
-            this.EtiquetaGrupo = new System.Windows.Forms.Label();
-            this.SeleccionarGrupo = new System.Windows.Forms.ComboBox();
-            this.EtiquetaFecha = new System.Windows.Forms.Label();
-            this.calendarExamen = new System.Windows.Forms.MonthCalendar();
-            this.EtiquetaDuracion = new System.Windows.Forms.Label();
-            this.SeleccionarDuracion = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.GuardarExamen2 = new System.Windows.Forms.Button();
+            this.PuntajeCambiar = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.IndiceExamenPuntaje = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.IndiceBanco = new System.Windows.Forms.TextBox();
+            this.IndiceExamen = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.GuardarExamen = new System.Windows.Forms.Button();
-            this.IndiceExamen = new System.Windows.Forms.TextBox();
-            this.IndiceBanco = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.IndiceExamenPuntaje = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.PuntajeCambiar = new System.Windows.Forms.TextBox();
-            this.EtiquetaNpreguntas = new System.Windows.Forms.Label();
-            this.NumeroPreguntas = new System.Windows.Forms.TextBox();
-            this.GuardarExamen2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -91,6 +91,101 @@
             this.panel1.Size = new System.Drawing.Size(376, 584);
             this.panel1.TabIndex = 2;
             // 
+            // NumeroPreguntas
+            // 
+            this.NumeroPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.NumeroPreguntas.Location = new System.Drawing.Point(19, 479);
+            this.NumeroPreguntas.Name = "NumeroPreguntas";
+            this.NumeroPreguntas.Size = new System.Drawing.Size(123, 30);
+            this.NumeroPreguntas.TabIndex = 31;
+            this.NumeroPreguntas.TextChanged += new System.EventHandler(this.NumeroPreguntas_TextChanged);
+            // 
+            // EtiquetaNpreguntas
+            // 
+            this.EtiquetaNpreguntas.AutoSize = true;
+            this.EtiquetaNpreguntas.BackColor = System.Drawing.Color.Transparent;
+            this.EtiquetaNpreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.EtiquetaNpreguntas.ForeColor = System.Drawing.Color.Black;
+            this.EtiquetaNpreguntas.Location = new System.Drawing.Point(14, 451);
+            this.EtiquetaNpreguntas.Name = "EtiquetaNpreguntas";
+            this.EtiquetaNpreguntas.Size = new System.Drawing.Size(202, 25);
+            this.EtiquetaNpreguntas.TabIndex = 24;
+            this.EtiquetaNpreguntas.Text = "Numero de Preguntas";
+            // 
+            // SeleccionarDuracion
+            // 
+            this.SeleccionarDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.SeleccionarDuracion.FormattingEnabled = true;
+            this.SeleccionarDuracion.Location = new System.Drawing.Point(19, 415);
+            this.SeleccionarDuracion.Name = "SeleccionarDuracion";
+            this.SeleccionarDuracion.Size = new System.Drawing.Size(329, 33);
+            this.SeleccionarDuracion.TabIndex = 23;
+            this.SeleccionarDuracion.SelectedIndexChanged += new System.EventHandler(this.SeleccionarDuracion_SelectedIndexChanged);
+            // 
+            // EtiquetaDuracion
+            // 
+            this.EtiquetaDuracion.AutoSize = true;
+            this.EtiquetaDuracion.BackColor = System.Drawing.Color.Transparent;
+            this.EtiquetaDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.EtiquetaDuracion.ForeColor = System.Drawing.Color.Black;
+            this.EtiquetaDuracion.Location = new System.Drawing.Point(14, 387);
+            this.EtiquetaDuracion.Name = "EtiquetaDuracion";
+            this.EtiquetaDuracion.Size = new System.Drawing.Size(90, 25);
+            this.EtiquetaDuracion.TabIndex = 22;
+            this.EtiquetaDuracion.Text = "Duración";
+            // 
+            // calendarExamen
+            // 
+            this.calendarExamen.Location = new System.Drawing.Point(53, 216);
+            this.calendarExamen.MaxSelectionCount = 365;
+            this.calendarExamen.Name = "calendarExamen";
+            this.calendarExamen.TabIndex = 21;
+            this.calendarExamen.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.calendarExamen_DateChanged);
+            // 
+            // EtiquetaFecha
+            // 
+            this.EtiquetaFecha.AutoSize = true;
+            this.EtiquetaFecha.BackColor = System.Drawing.Color.Transparent;
+            this.EtiquetaFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.EtiquetaFecha.ForeColor = System.Drawing.Color.Black;
+            this.EtiquetaFecha.Location = new System.Drawing.Point(14, 192);
+            this.EtiquetaFecha.Name = "EtiquetaFecha";
+            this.EtiquetaFecha.Size = new System.Drawing.Size(67, 25);
+            this.EtiquetaFecha.TabIndex = 17;
+            this.EtiquetaFecha.Text = "Fecha";
+            // 
+            // SeleccionarGrupo
+            // 
+            this.SeleccionarGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.SeleccionarGrupo.FormattingEnabled = true;
+            this.SeleccionarGrupo.Location = new System.Drawing.Point(19, 156);
+            this.SeleccionarGrupo.Name = "SeleccionarGrupo";
+            this.SeleccionarGrupo.Size = new System.Drawing.Size(329, 33);
+            this.SeleccionarGrupo.TabIndex = 16;
+            this.SeleccionarGrupo.SelectedIndexChanged += new System.EventHandler(this.SeleccionarGrupo_SelectedIndexChanged);
+            // 
+            // EtiquetaGrupo
+            // 
+            this.EtiquetaGrupo.AutoSize = true;
+            this.EtiquetaGrupo.BackColor = System.Drawing.Color.Transparent;
+            this.EtiquetaGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.EtiquetaGrupo.ForeColor = System.Drawing.Color.Black;
+            this.EtiquetaGrupo.Location = new System.Drawing.Point(14, 128);
+            this.EtiquetaGrupo.Name = "EtiquetaGrupo";
+            this.EtiquetaGrupo.Size = new System.Drawing.Size(66, 25);
+            this.EtiquetaGrupo.TabIndex = 15;
+            this.EtiquetaGrupo.Text = "Grupo";
+            // 
+            // SeleccionarCurso
+            // 
+            this.SeleccionarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.SeleccionarCurso.FormattingEnabled = true;
+            this.SeleccionarCurso.Location = new System.Drawing.Point(19, 92);
+            this.SeleccionarCurso.Name = "SeleccionarCurso";
+            this.SeleccionarCurso.Size = new System.Drawing.Size(329, 33);
+            this.SeleccionarCurso.TabIndex = 14;
+            this.SeleccionarCurso.SelectedIndexChanged += new System.EventHandler(this.SeleccionarCurso_SelectedIndexChanged);
+            // 
             // EtiquetaCurso
             // 
             this.EtiquetaCurso.AutoSize = true;
@@ -124,76 +219,7 @@
             this.guardarConfExamen.TabIndex = 11;
             this.guardarConfExamen.Text = "Generar Examen Aleatorio";
             this.guardarConfExamen.UseVisualStyleBackColor = true;
-            // 
-            // SeleccionarCurso
-            // 
-            this.SeleccionarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SeleccionarCurso.FormattingEnabled = true;
-            this.SeleccionarCurso.Location = new System.Drawing.Point(19, 92);
-            this.SeleccionarCurso.Name = "SeleccionarCurso";
-            this.SeleccionarCurso.Size = new System.Drawing.Size(329, 33);
-            this.SeleccionarCurso.TabIndex = 14;
-            // 
-            // EtiquetaGrupo
-            // 
-            this.EtiquetaGrupo.AutoSize = true;
-            this.EtiquetaGrupo.BackColor = System.Drawing.Color.Transparent;
-            this.EtiquetaGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.EtiquetaGrupo.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaGrupo.Location = new System.Drawing.Point(14, 128);
-            this.EtiquetaGrupo.Name = "EtiquetaGrupo";
-            this.EtiquetaGrupo.Size = new System.Drawing.Size(66, 25);
-            this.EtiquetaGrupo.TabIndex = 15;
-            this.EtiquetaGrupo.Text = "Grupo";
-            // 
-            // SeleccionarGrupo
-            // 
-            this.SeleccionarGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SeleccionarGrupo.FormattingEnabled = true;
-            this.SeleccionarGrupo.Location = new System.Drawing.Point(19, 156);
-            this.SeleccionarGrupo.Name = "SeleccionarGrupo";
-            this.SeleccionarGrupo.Size = new System.Drawing.Size(329, 33);
-            this.SeleccionarGrupo.TabIndex = 16;
-            // 
-            // EtiquetaFecha
-            // 
-            this.EtiquetaFecha.AutoSize = true;
-            this.EtiquetaFecha.BackColor = System.Drawing.Color.Transparent;
-            this.EtiquetaFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.EtiquetaFecha.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaFecha.Location = new System.Drawing.Point(14, 192);
-            this.EtiquetaFecha.Name = "EtiquetaFecha";
-            this.EtiquetaFecha.Size = new System.Drawing.Size(67, 25);
-            this.EtiquetaFecha.TabIndex = 17;
-            this.EtiquetaFecha.Text = "Fecha";
-            // 
-            // calendarExamen
-            // 
-            this.calendarExamen.Location = new System.Drawing.Point(53, 216);
-            this.calendarExamen.MaxSelectionCount = 365;
-            this.calendarExamen.Name = "calendarExamen";
-            this.calendarExamen.TabIndex = 21;
-            // 
-            // EtiquetaDuracion
-            // 
-            this.EtiquetaDuracion.AutoSize = true;
-            this.EtiquetaDuracion.BackColor = System.Drawing.Color.Transparent;
-            this.EtiquetaDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.EtiquetaDuracion.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaDuracion.Location = new System.Drawing.Point(14, 387);
-            this.EtiquetaDuracion.Name = "EtiquetaDuracion";
-            this.EtiquetaDuracion.Size = new System.Drawing.Size(90, 25);
-            this.EtiquetaDuracion.TabIndex = 22;
-            this.EtiquetaDuracion.Text = "Duración";
-            // 
-            // SeleccionarDuracion
-            // 
-            this.SeleccionarDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SeleccionarDuracion.FormattingEnabled = true;
-            this.SeleccionarDuracion.Location = new System.Drawing.Point(19, 415);
-            this.SeleccionarDuracion.Name = "SeleccionarDuracion";
-            this.SeleccionarDuracion.Size = new System.Drawing.Size(329, 33);
-            this.SeleccionarDuracion.TabIndex = 23;
+            this.guardarConfExamen.Click += new System.EventHandler(this.guardarConfExamen_Click);
             // 
             // panel2
             // 
@@ -214,6 +240,89 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(376, 584);
             this.panel2.TabIndex = 24;
+            // 
+            // GuardarExamen2
+            // 
+            this.GuardarExamen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.GuardarExamen2.Location = new System.Drawing.Point(69, 239);
+            this.GuardarExamen2.Name = "GuardarExamen2";
+            this.GuardarExamen2.Size = new System.Drawing.Size(220, 47);
+            this.GuardarExamen2.TabIndex = 31;
+            this.GuardarExamen2.Text = "Guardar cambios";
+            this.GuardarExamen2.UseVisualStyleBackColor = true;
+            this.GuardarExamen2.Click += new System.EventHandler(this.GuardarExamen2_Click);
+            // 
+            // PuntajeCambiar
+            // 
+            this.PuntajeCambiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.PuntajeCambiar.Location = new System.Drawing.Point(19, 460);
+            this.PuntajeCambiar.Name = "PuntajeCambiar";
+            this.PuntajeCambiar.Size = new System.Drawing.Size(123, 30);
+            this.PuntajeCambiar.TabIndex = 30;
+            this.PuntajeCambiar.TextChanged += new System.EventHandler(this.PuntajeCambiar_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(14, 432);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(338, 25);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "Ingrese el puntaje que desea asignar:";
+            // 
+            // IndiceExamenPuntaje
+            // 
+            this.IndiceExamenPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.IndiceExamenPuntaje.Location = new System.Drawing.Point(19, 399);
+            this.IndiceExamenPuntaje.Name = "IndiceExamenPuntaje";
+            this.IndiceExamenPuntaje.Size = new System.Drawing.Size(123, 30);
+            this.IndiceExamenPuntaje.TabIndex = 28;
+            this.IndiceExamenPuntaje.TextChanged += new System.EventHandler(this.IndiceExamenPuntaje_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(14, 346);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(313, 50);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Ingrese el número de pregunta del \r\nexamen:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(125)))), ((int)(((byte)(218)))));
+            this.label3.Location = new System.Drawing.Point(13, 315);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(226, 31);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Cambiar puntajes";
+            // 
+            // IndiceBanco
+            // 
+            this.IndiceBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.IndiceBanco.Location = new System.Drawing.Point(19, 203);
+            this.IndiceBanco.Name = "IndiceBanco";
+            this.IndiceBanco.Size = new System.Drawing.Size(123, 30);
+            this.IndiceBanco.TabIndex = 25;
+            this.IndiceBanco.TextChanged += new System.EventHandler(this.IndiceBanco_TextChanged);
+            // 
+            // IndiceExamen
+            // 
+            this.IndiceExamen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.IndiceExamen.Location = new System.Drawing.Point(19, 117);
+            this.IndiceExamen.Name = "IndiceExamen";
+            this.IndiceExamen.Size = new System.Drawing.Size(123, 30);
+            this.IndiceExamen.TabIndex = 24;
+            this.IndiceExamen.TextChanged += new System.EventHandler(this.IndiceExamen_TextChanged);
             // 
             // label4
             // 
@@ -260,104 +369,7 @@
             this.GuardarExamen.TabIndex = 11;
             this.GuardarExamen.Text = "Guardar cambios";
             this.GuardarExamen.UseVisualStyleBackColor = true;
-            // 
-            // IndiceExamen
-            // 
-            this.IndiceExamen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.IndiceExamen.Location = new System.Drawing.Point(19, 117);
-            this.IndiceExamen.Name = "IndiceExamen";
-            this.IndiceExamen.Size = new System.Drawing.Size(123, 30);
-            this.IndiceExamen.TabIndex = 24;
-            // 
-            // IndiceBanco
-            // 
-            this.IndiceBanco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.IndiceBanco.Location = new System.Drawing.Point(19, 203);
-            this.IndiceBanco.Name = "IndiceBanco";
-            this.IndiceBanco.Size = new System.Drawing.Size(123, 30);
-            this.IndiceBanco.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(125)))), ((int)(((byte)(218)))));
-            this.label3.Location = new System.Drawing.Point(13, 315);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 31);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Cambiar puntajes";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(14, 346);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 50);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Ingrese el número de pregunta del \r\nexamen:";
-            // 
-            // IndiceExamenPuntaje
-            // 
-            this.IndiceExamenPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.IndiceExamenPuntaje.Location = new System.Drawing.Point(19, 399);
-            this.IndiceExamenPuntaje.Name = "IndiceExamenPuntaje";
-            this.IndiceExamenPuntaje.Size = new System.Drawing.Size(123, 30);
-            this.IndiceExamenPuntaje.TabIndex = 28;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(14, 432);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(338, 25);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Ingrese el puntaje que desea asignar:";
-            // 
-            // PuntajeCambiar
-            // 
-            this.PuntajeCambiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.PuntajeCambiar.Location = new System.Drawing.Point(19, 460);
-            this.PuntajeCambiar.Name = "PuntajeCambiar";
-            this.PuntajeCambiar.Size = new System.Drawing.Size(123, 30);
-            this.PuntajeCambiar.TabIndex = 30;
-            // 
-            // EtiquetaNpreguntas
-            // 
-            this.EtiquetaNpreguntas.AutoSize = true;
-            this.EtiquetaNpreguntas.BackColor = System.Drawing.Color.Transparent;
-            this.EtiquetaNpreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.EtiquetaNpreguntas.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaNpreguntas.Location = new System.Drawing.Point(14, 451);
-            this.EtiquetaNpreguntas.Name = "EtiquetaNpreguntas";
-            this.EtiquetaNpreguntas.Size = new System.Drawing.Size(202, 25);
-            this.EtiquetaNpreguntas.TabIndex = 24;
-            this.EtiquetaNpreguntas.Text = "Numero de Preguntas";
-            // 
-            // NumeroPreguntas
-            // 
-            this.NumeroPreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.NumeroPreguntas.Location = new System.Drawing.Point(19, 479);
-            this.NumeroPreguntas.Name = "NumeroPreguntas";
-            this.NumeroPreguntas.Size = new System.Drawing.Size(123, 30);
-            this.NumeroPreguntas.TabIndex = 31;
-            // 
-            // GuardarExamen2
-            // 
-            this.GuardarExamen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.GuardarExamen2.Location = new System.Drawing.Point(69, 239);
-            this.GuardarExamen2.Name = "GuardarExamen2";
-            this.GuardarExamen2.Size = new System.Drawing.Size(220, 47);
-            this.GuardarExamen2.TabIndex = 31;
-            this.GuardarExamen2.Text = "Guardar cambios";
-            this.GuardarExamen2.UseVisualStyleBackColor = true;
+            this.GuardarExamen.Click += new System.EventHandler(this.GuardarExamen_Click);
             // 
             // generacionExamenes
             // 

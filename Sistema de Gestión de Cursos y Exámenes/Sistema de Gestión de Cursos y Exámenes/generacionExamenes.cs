@@ -10,17 +10,6 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 {
-<<<<<<< HEAD
-    public class Examen
-    {
-        public List<int> Preguntas; //Indices de pregunta
-        public string Nombre;
-        public string Tipo; //Control parcial final
-        public int Tiempo;
-        public int Npreguntas; //cantidad
-        public List<Grupo> Grupos;
-        public List<int> Puntajes;
-=======
     public struct Examen
     {
         List<int> Preguntas; //Indices de pregunta
@@ -49,7 +38,6 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             }
             return suma;
         }
->>>>>>> 414b96e1607212093f3606ef42e4e57dfc6a2a66
         bool CambiarPregunta(int a, int b)//cambio de indices indice del examen con indice del banco
         {
             if(b <= BD.g_PREGUNTAS_GLOBAL.Count)
@@ -92,6 +80,66 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         }
 
         private void generacionExamenes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GuardarExamen2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GuardarExamen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calendarExamen_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void SeleccionarGrupo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SeleccionarCurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SeleccionarDuracion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NumeroPreguntas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guardarConfExamen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IndiceExamen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IndiceBanco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IndiceExamenPuntaje_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PuntajeCambiar_TextChanged(object sender, EventArgs e)
         {
 
         }
