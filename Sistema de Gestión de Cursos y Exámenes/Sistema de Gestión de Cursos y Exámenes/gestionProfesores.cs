@@ -182,8 +182,8 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
     {
         
         public string usuario,contraseña;
-        public List<Curso> cursos;
-        public List<Curso> grupos;
+        public List<Curso> cursos = new List<Curso>();
+        public List<Grupo> grupos= new List<Grupo>();
         public string nombre, apellido;
         public int DNI;
         public List<Examen> examenes;
