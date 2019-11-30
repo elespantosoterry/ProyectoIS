@@ -16,5 +16,36 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
             InitializeComponent();
         }
+
+        private void programarExamen_Load(object sender, EventArgs e)
+        {
+            //SeleccionarCurso.Items.Add();
+        }
+        private void SeleccionarCurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guardarConfExamen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SeleccionarTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
     }
 }

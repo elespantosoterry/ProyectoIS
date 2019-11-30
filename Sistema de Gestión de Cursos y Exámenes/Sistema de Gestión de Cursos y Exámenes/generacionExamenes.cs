@@ -88,6 +88,62 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             }
             return true;
         }
+        public void generarPDF()
+        {
+            Document doc = new Document();
+            PdfWriter.GetInstance(doc, new FileStream("Examen.pdf", FileMode.Create));
+            doc.Open();
+
+            Paragraph title = new Paragraph();
+            title.Font = FontFactory.GetFont(FontFactory.TIMES, 18f, BaseColor.BLACK);
+            title.Add(Tipo);
+            doc.Add(title);
+            doc.AddCreator(BD.g_PROFESOR_GLOBAL[BD.g_sesionID].nombre);
+            doc.Add(new Paragraph("Nombres y Apellido:___________________________________________________________________"));
+            doc.Add(new Paragraph("Tiempo para el examen:"));
+            doc.Add(new Paragraph(Tiempo));
+            doc.Add(new Paragraph("Curso:"));
+            doc.Add(new Paragraph(Curso));
+            doc.Add(new Paragraph("Nota:______"));
+            /*for(int i = 0; i < Grupos.Count; i++)
+            {
+                doc.Add(Grupos[i].ToString);
+            }*/
+            for (int i = 0; i < Preguntas.Count; i++)
+            {
+                if(BD.PREGUNTAS_GLOBAL[Preguntas[i]].tipo == "llenar")
+                {
+                    doc.Add(new Paragraph("Pregunta Numero "));
+                    doc.Add(new Paragraph(i));
+                    doc.Add(new Paragraph("TIEMPO"));
+                    doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[i]].tiempo));
+                    doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[i]].pregunta));
+                    for (int j = 0; j < BD.PREGUNTAS_GLOBAL[Preguntas[i]].reglones-1; j++)
+                    {
+                        doc.Add(new Paragraph("_________________________________________________________________________________________________"));
+                    }
+                        doc.Add(new Paragraph("_________________________________________________________________________________________________"));
+                    
+                }
+                else if(BD.PREGUNTAS_GLOBAL[Preguntas[i]].tipo == "opcion multiple")
+                {
+                    doc.Add(new Paragraph("Pregunta Numero "));
+                    doc.Add(new Paragraph(i));
+                    doc.Add(new Paragraph("TIEMPO"));
+                    doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[i]].tiempo));
+                    doc.Add(new Paragraph("Subraye la alternativa correcta:"));
+                    doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[i]].pregunta));
+                    for (int j = 0; j < BD.PREGUNTAS_GLOBAL[Preguntas[i]].incorrectasOP.Count; j++)
+                    {
+                        doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[j]].incorrectasOP[j]));
+                    }
+                    doc.Add(new Paragraph(BD.PREGUNTAS_GLOBAL[Preguntas[i]].respuestasOP[0]));
+                }
+                doc.Add(new Paragraph());
+            }
+                doc.Add(new Paragraph("Fin del Examen..."));
+            doc.Close();
+        }
 
     }
     public partial class generacionExamenes : Form
@@ -194,19 +250,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
 
         private void GenerarPDF_Click(object sender, EventArgs e)
         {
-            Document doc = new Document();
-            PdfWriter.GetInstance(doc, new FileStream("Examen.pdf", FileMode.Create));
-            doc.Open();
-
-            Paragraph title = new Paragraph();
-            title.Font = FontFactory.GetFont(FontFactory.TIMES, 18f, BaseColor.BLACK);
-            title.Add("Hola Mundo!!");
-            doc.Add(title);
-
-            doc.Add(new Paragraph("Hola Mundo!!"));
-            doc.Add(new Paragraph("Parrafo 1"));
-            doc.Add(new Paragraph("Parrafo 2"));
-            doc.Close();
+            BD.g_PROFESOR_GLOBAL[BD.g_sesionID].examenes[0].generarPDF();
         }
     }
 }

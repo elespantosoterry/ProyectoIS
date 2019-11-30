@@ -253,6 +253,9 @@
     <EmbeddedResource Include="menuProfesor.resx">
       <DependentUpon>menuProfesor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="programarExamen.resx">
+      <DependentUpon>programarExamen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
