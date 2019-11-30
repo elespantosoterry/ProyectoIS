@@ -70,6 +70,12 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         
         private void asignarCursoBT_Click(object sender, EventArgs e)
         {
+            if (BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex].cupos < 1)
+            {
+                MessageBox.Show("No hay cupos para matricular a alguien mas");
+                return;
+            }
+
             bool encontro = false;
             for (int i = 0; i < BD.ALUMNO_GLOBAL.Count; i++)
             {
@@ -77,9 +83,18 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                 {
                     encontro = true;
                     BD.ALUMNO_GLOBAL[i].grupos.Add(BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex]);
+                    
+                    BD.GRUPO_GLOBAL[matriculaGrupos.SelectedIndex].cupos -= 1;
                     break;
-                }
-                
+                } 
+            }
+            if (encontro == true)
+            {
+                MessageBox.Show("Creado exitosamente");
+            }
+            else
+            {
+                MessageBox.Show("No se encontró ese Código de Alumno");
             }
             
         }

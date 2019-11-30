@@ -21,6 +21,16 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
 
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuevoGrupo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class Unidad_Tematica {

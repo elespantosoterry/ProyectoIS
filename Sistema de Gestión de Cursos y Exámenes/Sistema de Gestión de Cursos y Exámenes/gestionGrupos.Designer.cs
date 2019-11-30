@@ -223,9 +223,9 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(40, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(351, 46);
+            this.label2.Size = new System.Drawing.Size(355, 46);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Gestión de Cursos";
+            this.label2.Text = "Gestión de Grupos";
             // 
             // gestionGrupos
             // 
