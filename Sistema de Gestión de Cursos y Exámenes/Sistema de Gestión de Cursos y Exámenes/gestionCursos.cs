@@ -19,7 +19,10 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
             InitializeComponent();
         }
-        
+        public void Form_Load(object sender, EventArgs e)
+        {
+            refreshItemsEliminado();
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -117,12 +120,16 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
                 periodoAsignado.Items.Add(nuevo);
 
             }
+            grupoAsignado.Items.Clear();
+            for (int i = 0; i < BD.GRUPO_GLOBAL.Count; i++)
+            {
+                string nuevo = BD.GRUPO_GLOBAL[i].identificador;
+                grupoAsignado.Items.Add(nuevo);
+
+            }
             //cursoEliminado.SelectedIndex = 0;
         }
-        private void Form_Load(object sender, EventArgs e)
-        {
-            refreshItemsEliminado();
-        }
+        
         private void guardarNuevoCursoBT_Click(object sender, EventArgs e)
         {
 

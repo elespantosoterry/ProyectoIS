@@ -41,3 +41,29 @@ C:\Users\wilbe\OneDrive\Escritorio\proyectoSOFT\Sistema de Gestión de Cursos y 
 >>>>>>> 7eedfc18a3c281c464248aae8f6bf9bb37036c3a
 C:\Users\Asus\Desktop\SISITEMA\proyectoSOFT\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuDirector.resources
 C:\Users\Asus\Desktop\SISITEMA\proyectoSOFT\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuProfesor.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Debug\Sistema de Gestión de Cursos y Exámenes.exe.config
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Debug\Sistema de Gestión de Cursos y Exámenes.exe
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Debug\Sistema de Gestión de Cursos y Exámenes.pdb
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema de Gestión de Cursos y Exámenes.csprojAssemblyReference.cache
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.examenesDisponibles.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.generacionExamenes.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionAlumnos.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionCursos.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionGrupos.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionPeriodos.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionPreguntas.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionProfesores.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.gestionUnidadesTematicas.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.login.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuAlumno.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuDirector.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.menuProfesor.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.Properties.Resources.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema_de_Gestión_de_Cursos_y_Exámenes.rendirExamen.resources
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema de Gestión de Cursos y Exámenes.csproj.GenerateResource.cache
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema de Gestión de Cursos y Exámenes.csproj.CoreCompileInputs.cache
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema de Gestión de Cursos y Exámenes.exe
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema de Gestión de Cursos y Exámenes.pdb
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Debug\itextsharp.dll
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\bin\Debug\itextsharp.xml
+C:\Users\wilbe\OneDrive\Escritorio\SoftSabado\ProyectoIS\Sistema de Gestión de Cursos y Exámenes\Sistema de Gestión de Cursos y Exámenes\obj\Debug\Sistema de Gestión de Cursos y Exámenes.csproj.CopyComplete

@@ -40,7 +40,8 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             Grupo foo = new Grupo(nombre, Int32.Parse(cuposGrupo.Text));
             //string nuevo = foo.m_periodo;
             BD.GRUPO_GLOBAL.Add(foo);
-            this.nuevoGrupo.Text = string.Empty; //borra lo escrito
+            this.nuevoGrupo.Text = string.Empty;
+            this.cuposGrupo.Text = string.Empty;//borra lo escrito
             MessageBox.Show("Abierto exitosamente");
             refreshGrupos();
         }
