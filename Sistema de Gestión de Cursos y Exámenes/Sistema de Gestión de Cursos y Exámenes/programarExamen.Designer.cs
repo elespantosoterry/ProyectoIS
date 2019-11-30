@@ -32,10 +32,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.SeleccionarTipo = new System.Windows.Forms.ComboBox();
             this.EtiquetaGrupo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guardarConfExamen = new System.Windows.Forms.Button();
             this.SeleccionarCurso = new System.Windows.Forms.ComboBox();
             this.EtiquetaCurso = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guardarConfExamen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +90,28 @@
             this.EtiquetaGrupo.TabIndex = 15;
             this.EtiquetaGrupo.Text = "Grupo";
             // 
+            // SeleccionarCurso
+            // 
+            this.SeleccionarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.SeleccionarCurso.FormattingEnabled = true;
+            this.SeleccionarCurso.Location = new System.Drawing.Point(19, 81);
+            this.SeleccionarCurso.Name = "SeleccionarCurso";
+            this.SeleccionarCurso.Size = new System.Drawing.Size(329, 33);
+            this.SeleccionarCurso.TabIndex = 14;
+            this.SeleccionarCurso.SelectedIndexChanged += new System.EventHandler(this.SeleccionarCurso_SelectedIndexChanged);
+            // 
+            // EtiquetaCurso
+            // 
+            this.EtiquetaCurso.AutoSize = true;
+            this.EtiquetaCurso.BackColor = System.Drawing.Color.Transparent;
+            this.EtiquetaCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.EtiquetaCurso.ForeColor = System.Drawing.Color.Black;
+            this.EtiquetaCurso.Location = new System.Drawing.Point(14, 53);
+            this.EtiquetaCurso.Name = "EtiquetaCurso";
+            this.EtiquetaCurso.Size = new System.Drawing.Size(213, 25);
+            this.EtiquetaCurso.TabIndex = 5;
+            this.EtiquetaCurso.Text = "Seleccione un Examen";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -112,33 +135,23 @@
             this.guardarConfExamen.UseVisualStyleBackColor = true;
             this.guardarConfExamen.Click += new System.EventHandler(this.guardarConfExamen_Click);
             // 
-            // SeleccionarCurso
+            // button1
             // 
-            this.SeleccionarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SeleccionarCurso.FormattingEnabled = true;
-            this.SeleccionarCurso.Location = new System.Drawing.Point(19, 81);
-            this.SeleccionarCurso.Name = "SeleccionarCurso";
-            this.SeleccionarCurso.Size = new System.Drawing.Size(329, 33);
-            this.SeleccionarCurso.TabIndex = 14;
-            this.SeleccionarCurso.SelectedIndexChanged += new System.EventHandler(this.SeleccionarCurso_SelectedIndexChanged);
-            // 
-            // EtiquetaCurso
-            // 
-            this.EtiquetaCurso.AutoSize = true;
-            this.EtiquetaCurso.BackColor = System.Drawing.Color.Transparent;
-            this.EtiquetaCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.EtiquetaCurso.ForeColor = System.Drawing.Color.Black;
-            this.EtiquetaCurso.Location = new System.Drawing.Point(14, 53);
-            this.EtiquetaCurso.Name = "EtiquetaCurso";
-            this.EtiquetaCurso.Size = new System.Drawing.Size(213, 25);
-            this.EtiquetaCurso.TabIndex = 5;
-            this.EtiquetaCurso.Text = "Seleccione un Examen";
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button1.Location = new System.Drawing.Point(466, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 49);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Retroceder";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // programarExamen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.titulo);
             this.Name = "programarExamen";
@@ -161,5 +174,6 @@
         private System.Windows.Forms.Label EtiquetaCurso;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button guardarConfExamen;
+        private System.Windows.Forms.Button button1;
     }
 }

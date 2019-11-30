@@ -21,6 +21,10 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             set { g_PREGUNTAS_CMP_GLOBAL = value; }
         }*/
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ac152763509b87bb3a9e501ea120a04bda09a78e
         //public static Pregunta unaPLLENAR = new Pregunta(1);
         //public static Pregunta unaPCONCRETA = new Pregunta(2);
         //public static Pregunta unaPALTERNATIVA = new Pregunta(3);
@@ -37,6 +41,10 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         public static Pregunta unaPCONCRETA = new Pregunta(2);
         public static Pregunta unaPALTERNATIVA = new Pregunta(3);
         public static Pregunta unaPVERDADEROFALSO = new Pregunta(4);*/
+<<<<<<< HEAD
+=======
+
+>>>>>>> ac152763509b87bb3a9e501ea120a04bda09a78e
         public static List<Pregunta> g_PREGUNTAS_GLOBAL = new List<Pregunta>();
         public static List<Pregunta> PREGUNTAS_GLOBAL
         {

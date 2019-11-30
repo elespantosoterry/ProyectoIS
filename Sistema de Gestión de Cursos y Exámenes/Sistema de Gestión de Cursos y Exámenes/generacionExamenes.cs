@@ -281,5 +281,12 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
         {
             BD.g_PROFESOR_GLOBAL[BD.g_sesionID].examenes[0].generarPDF();
         }
+
+        private void Retroceder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menuProfesor mP = new menuProfesor();
+            mP.Show();
+        }
     }
 }

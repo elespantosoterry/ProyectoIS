@@ -29,7 +29,7 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             exam = BD.ALUMNO_GLOBAL[BD.g_sesionID].examenes[BD.g_sesionID];
             for (int i = 0; i < exam.Npreguntas; i++)
             {
-                comboBox1.Items.Add(i.ToString());
+                comboBox1.Items.Add((i).ToString());
             }
             
         }
@@ -224,6 +224,12 @@ namespace Sistema_de_Gestión_de_Cursos_y_Exámenes
             }
 
             BD.puntaje_ex = puntaje;
+            MessageBox.Show("RESPUESTA ENVIADA");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
